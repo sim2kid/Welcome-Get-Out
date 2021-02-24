@@ -65,6 +65,11 @@ public class MouseManager : MonoBehaviour
         {
             obj = hit.transform.gameObject;
             Debug.DrawRay(ray.origin, ray.direction * hit.distance, Color.yellow);
+
+            if (obj != null)
+            {
+                obj.GetComponent<IInteractable>().UpdateMouseState(clickEvent);
+            }
         }
         else 
         {
@@ -73,7 +78,7 @@ public class MouseManager : MonoBehaviour
     } 
 }
 
-enum ClickType 
+public enum ClickType 
 {
     Click,
     Hold,

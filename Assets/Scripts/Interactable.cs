@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour, IInteractable
 {
-    public SpriteMouseState State 
+    public MouseState State 
     {
         get;
         private set;
@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour, IInteractable
     void Start()
     {
         //Initialize Variables
-        State = SpriteMouseState.None;
+        State = MouseState.None;
     }
 
     // Update is called once per frame
@@ -22,9 +22,19 @@ public class Interactable : MonoBehaviour, IInteractable
     {
         
     }
+    public void UpdateMouseState(ClickType clickType) 
+    {
+        if (clickType == ClickType.Click) {
+            Debug.Log("I've been clicked!");
+        }
+        if (clickType == ClickType.Unclick)
+        {
+            Debug.Log("Oh wait.. nvm...");
+        }
+    }
 }
 
-public enum SpriteMouseState {
+public enum MouseState {
     None, // Default State
     Hover, // While mouse is hovering (unclicked)
     Click, // When the mouse clicks down
