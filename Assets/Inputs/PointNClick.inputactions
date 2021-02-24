@@ -6,14 +6,6 @@
             "id": "e5993bc0-3260-47ff-8c6a-5ca32686949c",
             "actions": [
                 {
-                    "name": "Click",
-                    "type": "Button",
-                    "id": "e51fae95-f5be-435f-8c00-385383c604fd",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "Location",
                     "type": "Value",
                     "id": "55ad23a9-5f77-4561-84e2-b4bd21d1162d",
@@ -31,17 +23,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "38ed326f-0f02-40a2-aca1-6fac9bead5d7",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "Tap",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Click",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "25cb76d0-9863-4118-8150-7b9b4725c7ad",
