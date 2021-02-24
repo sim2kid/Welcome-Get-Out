@@ -12,12 +12,14 @@ public class MouseManager : MonoBehaviour
     private InputAction m_HoldAction;
 
     private ClickType click;
+    private GameObject lastHit;
 
     private int layerMask;
 
     private void Start()
     {
         click = ClickType.Clear;
+        lastHit = null;
         layerMask = 1 << 9;
     }
 
@@ -68,12 +70,24 @@ public class MouseManager : MonoBehaviour
 
             if (obj != null)
             {
+                if (lastHit != obj) 
+                {
+                    if(lastHit != null)
+                        lastHit.GetComponent<IInteractable>().OnLeave(clickEvent);
+                    obj.GetComponent<IInteractable>().OnEnter(clickEvent);
+                    lastHit = obj;
+                }
                 obj.GetComponent<IInteractable>().UpdateMouseState(clickEvent);
             }
         }
         else 
         {
             Debug.DrawRay(ray.origin, ray.direction * 50, Color.yellow);
+            if (lastHit != null) 
+            {
+                lastHit.GetComponent<IInteractable>().OnLeave(clickEvent);
+                lastHit = null;
+            }
         }
     } 
 }

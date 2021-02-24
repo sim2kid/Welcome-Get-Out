@@ -32,6 +32,14 @@ public class Interactable : MonoBehaviour, IInteractable
             Debug.Log("Oh wait.. nvm...");
         }
     }
+    public void OnEnter(ClickType clickType)
+    {
+        Debug.Log("A mouse entered while in state: " + clickType);
+    }
+    public void OnLeave(ClickType clickType) 
+    {
+        Debug.Log("A mouse left while in state: " + clickType);
+    }
 }
 
 public enum MouseState {
