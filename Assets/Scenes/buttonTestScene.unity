@@ -131,7 +131,8 @@ GameObject:
   m_Component:
   - component: {fileID: 439402580}
   - component: {fileID: 439402581}
-  m_Layer: 0
+  - component: {fileID: 439402582}
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,6 +203,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &439402582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439402579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.55, y: 3.55, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &973514310
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +226,8 @@ GameObject:
   m_Component:
   - component: {fileID: 973514311}
   - component: {fileID: 973514312}
-  m_Layer: 0
+  - component: {fileID: 973514313}
+  m_Layer: 9
   m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,6 +298,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &973514313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973514310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.55, y: 3.55, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1046476596
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +461,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1644322891}
   - component: {fileID: 1644322892}
-  m_Layer: 0
+  - component: {fileID: 1644322893}
+  m_Layer: 9
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,6 +533,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1644322893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644322890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.55, y: 3.55, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2031070370
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +639,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2092543122}
   - component: {fileID: 2092543123}
-  m_Layer: 0
+  - component: {fileID: 2092543124}
+  m_Layer: 9
   m_Name: Gear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,3 +711,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2092543124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092543121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.55, y: 3.55, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

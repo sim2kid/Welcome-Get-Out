@@ -13,9 +13,12 @@ public class MouseManager : MonoBehaviour
 
     private ClickType click;
 
+    private int layerMask;
+
     private void Start()
     {
         click = ClickType.Clear;
+        layerMask = 1 << 9;
     }
 
     private void FixedUpdate()
@@ -48,8 +51,26 @@ public class MouseManager : MonoBehaviour
             click = ClickType.Unclick;
         }
 
+        notifyObject(click, screenLocation);
+
         //Debug.Log("Click: " + click + ", Hold: " + hold + ", Location: (" + screenLocation.x + ", " + screenLocation.y + ")");
     }
+
+    private void notifyObject(ClickType clickEvent, Vector2 screenLocation)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(screenLocation);
+        RaycastHit hit;
+        GameObject obj;
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+        {
+            obj = hit.transform.gameObject;
+            Debug.DrawRay(ray.origin, ray.direction * hit.distance, Color.yellow);
+        }
+        else 
+        {
+            Debug.DrawRay(ray.origin, ray.direction * 50, Color.yellow);
+        }
+    } 
 }
 
 enum ClickType 
