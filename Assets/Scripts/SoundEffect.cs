@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundEffect : CycleSprite
+public class SoundEffect : Intractable
 {
     [SerializeField]
     private AudioClip soundToMake;
 
-    protected override void OnCycle()
+    public override void OnUnclick()
     {
         // Put in the call to the sound files here
-        base.OnCycle();
+        base.OnUnclick();
     }
 }
