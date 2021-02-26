@@ -9,9 +9,12 @@ We don't have game ready yet
 
 # Team Member:
 Team Leader/Designer/Artist
+
 Mingshen Wu ([Website](https://mingshenwu.myportfolio.com/))
 
+
 Programmer/Designer/Scrum Master
+
 Owen Ravelo ([Website](https://simmgames.com))
 
 Artist
