@@ -344,8 +344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e3d5e194de6d54ba1366f0a94a105b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteList: []
-  onSprite: 0
   soundToMake: {fileID: 0}
 --- !u!114 &439402584
 MonoBehaviour:
