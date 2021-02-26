@@ -26,7 +26,7 @@ public class CycleSprite : Intractable
 
     protected virtual void OnCycle() 
     {
-        Debug.Log("Now Cycling!");
+        //Debug.Log("Now Cycling!");
     }
 
     private void nextSprite() 
