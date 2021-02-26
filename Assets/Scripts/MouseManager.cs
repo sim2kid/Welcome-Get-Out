@@ -72,12 +72,17 @@ public class MouseManager : MonoBehaviour
             {
                 if (lastHit != obj) 
                 {
-                    if(lastHit != null)
-                        lastHit.GetComponent<IIntractable>().OnLeave(clickEvent);
-                    obj.GetComponent<IIntractable>().OnEnter(clickEvent);
+                    if (lastHit != null)
+                    {
+                        foreach(IIntractable lsht in lastHit.GetComponents<IIntractable>())
+                            lsht.OnLeave(clickEvent);
+                    }
+                    foreach (IIntractable obb in obj.GetComponents<IIntractable>())
+                        obb.OnEnter(clickEvent);
                     lastHit = obj;
                 }
-                obj.GetComponent<IIntractable>().UpdateMouseState(clickEvent);
+                foreach (IIntractable obb in obj.GetComponents<IIntractable>())
+                    obb.UpdateMouseState(clickEvent);
             }
         }
         else 
@@ -85,7 +90,8 @@ public class MouseManager : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * 50, Color.yellow);
             if (lastHit != null) 
             {
-                lastHit.GetComponent<IIntractable>().OnLeave(clickEvent);
+                foreach (IIntractable lsht in lastHit.GetComponents<IIntractable>())
+                    lsht.OnLeave(clickEvent);
                 lastHit = null;
             }
         }
