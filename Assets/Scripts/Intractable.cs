@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class Intractable : MonoBehaviour, IIntractable
 {
+    private void OnEnable()
+    {
+        gameObject.layer = 9; // 9 is Intractable layer
+    }
     public void UpdateMouseState(ClickType clickType) 
     {
         if (clickType == ClickType.Click) {
