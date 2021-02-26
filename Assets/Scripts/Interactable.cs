@@ -4,17 +4,6 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour, IInteractable
 {
-    void Start()
-    {
-        //Initialize Variables
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void UpdateMouseState(ClickType clickType) 
     {
         if (clickType == ClickType.Click) {
@@ -29,18 +18,18 @@ public class Interactable : MonoBehaviour, IInteractable
     //Event Responses
     public virtual void OnClick() 
     {
-        Debug.Log("I've been clicked!");
+        //Debug.Log("I've been clicked!");
     }
     public virtual void OnUnclick() 
     {
-        Debug.Log("Oh wait.. nvm...");
+        //Debug.Log("Oh wait.. nvm...");
     }
     public virtual void OnEnter(ClickType clickType)
     {
-        Debug.Log("A mouse entered while in state: " + clickType);
+        //Debug.Log("A mouse entered while in state: " + clickType);
     }
     public virtual void OnLeave(ClickType clickType) 
     {
-        Debug.Log("A mouse left while in state: " + clickType);
+        //Debug.Log("A mouse left while in state: " + clickType);
     }
 }
