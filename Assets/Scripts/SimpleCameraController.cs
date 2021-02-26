@@ -108,6 +108,11 @@ namespace UnityTemplateProjects
         
         void Update()
         {
+            //soundtest
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                audioControl.playTestSound();
+            }
+            
             // Exit Sample  
             if (Input.GetKey(KeyCode.Escape))
             {
