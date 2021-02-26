@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class CycleSprite : Interactable
+public class CycleSprite : Intractable
 {
     [SerializeField]
     private List<Sprite> spriteList = new List<Sprite>();

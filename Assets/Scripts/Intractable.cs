@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour, IInteractable
+public class Intractable : MonoBehaviour, IIntractable
 {
     public void UpdateMouseState(ClickType clickType) 
     {
