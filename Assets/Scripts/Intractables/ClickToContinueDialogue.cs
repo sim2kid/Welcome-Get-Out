@@ -19,9 +19,9 @@ public class ClickToContinueDialogue : Intractable
         }
     }
 
-    public override void OnUnclick()
+    public override void OnFullClick()
     {
         narrator.Trigger();
-        base.OnUnclick();
+        base.OnFullClick();
     }
 }

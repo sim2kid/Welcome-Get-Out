@@ -20,10 +20,10 @@ public class SoundEffect : Intractable
         }
     }
 
-    public override void OnUnclick()
+    public override void OnFullClick()
     {
         if(soundToMake != null)
             audioController.PlaySound(soundToMake);
-        base.OnUnclick();
+        base.OnFullClick();
     }
 }

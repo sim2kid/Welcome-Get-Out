@@ -17,16 +17,10 @@ public class CycleSprite : Intractable
         sr.sprite = spriteList[onSprite];
     }
 
-    public override void OnUnclick()
+    public override void OnFullClick()
     {
         nextSprite();
-        OnCycle();
-        base.OnUnclick();
-    }
-
-    protected virtual void OnCycle() 
-    {
-        //Debug.Log("Now Cycling!");
+        base.OnFullClick();
     }
 
     private void nextSprite() 
