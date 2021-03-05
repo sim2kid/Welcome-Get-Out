@@ -11,17 +11,18 @@ public class MouseManager : MonoBehaviour
     private InputAction m_LocationAction;
     private InputAction m_HoldAction;
 
-    private ClickType click;
+    private ClickType m_Click;
     private GameObject lastHit;
 
     public Vector2 MouseLocation => 
         Camera.main.ScreenToWorldPoint(m_LocationAction.ReadValue<Vector2>());
+    public ClickType Click => m_Click;
 
     private int layerMask;
 
     private void Start()
     {
-        click = ClickType.Clear;
+        m_Click = ClickType.Clear;
         lastHit = null;
         layerMask = 1 << 9;
     }
@@ -38,25 +39,25 @@ public class MouseManager : MonoBehaviour
         Vector2 screenLocation = m_LocationAction.ReadValue<Vector2>();
         var hold = m_HoldAction.ReadValue<float>();
 
-        if (click == ClickType.Unclick)
+        if (m_Click == ClickType.Unclick)
         {
-            click = ClickType.Clear;
+            m_Click = ClickType.Clear;
         }
-        if (click == ClickType.Click)
+        if (m_Click == ClickType.Click)
         {
-            click = ClickType.Hold;
-        }
-
-        if (click == ClickType.Clear && hold > 0) 
-        {
-            click = ClickType.Click;
-        }
-        if (click == ClickType.Hold && hold == 0)
-        {
-            click = ClickType.Unclick;
+            m_Click = ClickType.Hold;
         }
 
-        notifyObject(click, screenLocation);
+        if (m_Click == ClickType.Clear && hold > 0) 
+        {
+            m_Click = ClickType.Click;
+        }
+        if (m_Click == ClickType.Hold && hold == 0)
+        {
+            m_Click = ClickType.Unclick;
+        }
+
+        notifyObject(m_Click, screenLocation);
 
         //Debug.Log("Click: " + click + ", Hold: " + hold + ", Location: (" + screenLocation.x + ", " + screenLocation.y + ")");
     }

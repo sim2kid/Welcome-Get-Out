@@ -22,7 +22,14 @@ public class ClickAndDrag : Intractable
     private void Update()
     {
         if (isHolding)
-            transform.position = mouse.MouseLocation + offset;
+        {
+            Vector2 newPos = mouse.MouseLocation + offset;
+            transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
+            if (mouse.Click == ClickType.Clear) 
+            {
+                OnUnclick();
+            }
+        }
     }
 
     public override void OnClick()
