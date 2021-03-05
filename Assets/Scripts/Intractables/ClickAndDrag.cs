@@ -29,12 +29,14 @@ public class ClickAndDrag : Intractable
     {
         isHolding = true;
         offset = (Vector2)transform.position - mouse.MouseLocation;
+        base.OnClick();
     }
 
     public override void OnUnclick()
     {
         isHolding = false;
         offset = Vector2.zero;
+        base.OnUnclick();
     }
 
     public override void OnEnter(ClickType clickType)

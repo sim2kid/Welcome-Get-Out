@@ -9,4 +9,5 @@ public interface IIntractable
     void OnEnter(ClickType clickType);
     void OnClick();
     void OnUnclick();
+    void OnFullClick();
 }
