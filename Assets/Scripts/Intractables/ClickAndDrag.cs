@@ -5,8 +5,8 @@ using UnityEngine;
 public class ClickAndDrag : Intractable
 {
     private bool isHolding;
-    private Vector2 offset;
-    private MouseManager mouse;
+    protected Vector2 offset;
+    protected MouseManager mouse;
 
     private void OnEnable()
     {
@@ -23,12 +23,17 @@ public class ClickAndDrag : Intractable
     {
         if (isHolding)
         {
-            Vector2 newPos = mouse.MouseLocation + offset;
-            transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
-            if (mouse.Click == ClickType.Clear) 
-            {
-                OnUnclick();
-            }
+            OnHolding();
+        }
+    }
+
+    protected virtual void OnHolding() 
+    {
+        Vector2 newPos = mouse.MouseLocation + offset;
+        transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
+        if (mouse.Click == ClickType.Clear)
+        {
+            OnUnclick();
         }
     }
 
