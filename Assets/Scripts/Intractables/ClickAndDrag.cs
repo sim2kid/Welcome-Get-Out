@@ -2,17 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickAndDrag : MonoBehaviour
+public class ClickAndDrag : Intractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    private bool isHolding;
+    private Vector2 offset;
+    private MouseManager mouse;
 
+    private void OnEnable()
+    {
+        mouse = FindObjectOfType<MouseManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        isHolding = false;
+        offset = Vector2.zero;
+    }
+
+    private void Update()
+    {
+        if (isHolding)
+            transform.position = mouse.MouseLocation + offset;
+    }
+
+    public override void OnClick()
+    {
+        isHolding = true;
+        offset = (Vector2)transform.position - mouse.MouseLocation;
+    }
+
+    public override void OnUnclick()
+    {
+        isHolding = false;
+        offset = Vector2.zero;
+    }
+
+    public override void OnEnter(ClickType clickType)
+    {
+        if (clickType == ClickType.Clear) 
+        {
+            OnUnclick();
+        }
     }
 }

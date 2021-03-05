@@ -9,7 +9,7 @@ public class Intractable : MonoBehaviour, IIntractable
     {
         gameObject.layer = 9; // 9 is Intractable layer
     }
-    public void UpdateMouseState(ClickType clickType) 
+    public virtual void UpdateMouseState(ClickType clickType, Vector2 location) 
     {
         if (clickType == ClickType.Click) {
             OnClick();

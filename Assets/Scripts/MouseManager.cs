@@ -14,6 +14,9 @@ public class MouseManager : MonoBehaviour
     private ClickType click;
     private GameObject lastHit;
 
+    public Vector2 MouseLocation => 
+        Camera.main.ScreenToWorldPoint(m_LocationAction.ReadValue<Vector2>());
+
     private int layerMask;
 
     private void Start()
@@ -82,7 +85,7 @@ public class MouseManager : MonoBehaviour
                     lastHit = obj;
                 }
                 foreach (IIntractable obb in obj.GetComponents<IIntractable>())
-                    obb.UpdateMouseState(clickEvent);
+                    obb.UpdateMouseState(clickEvent, Camera.main.ScreenToWorldPoint(screenLocation));
             }
         }
         else 
