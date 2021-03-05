@@ -5,11 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Intractable : MonoBehaviour, IIntractable
 {
+    private bool canFullClick;
+
     private void OnEnable()
     {
         gameObject.layer = 9; // 9 is Intractable layer
     }
-    public void UpdateMouseState(ClickType clickType) 
+    private void Start()
+    {
+        canFullClick = false;
+    }
+    public virtual void UpdateMouseState(ClickType clickType, Vector2 location) 
     {
         if (clickType == ClickType.Click) {
             OnClick();
@@ -23,18 +29,24 @@ public class Intractable : MonoBehaviour, IIntractable
     //Event Responses
     public virtual void OnClick() 
     {
-        //Debug.Log("I've been clicked!");
+        canFullClick = true;
     }
     public virtual void OnUnclick() 
     {
-        //Debug.Log("Oh wait.. nvm...");
+        if (canFullClick)
+            OnFullClick();
+        canFullClick = false;
+    }
+    public virtual void OnFullClick() 
+    {
+
     }
     public virtual void OnEnter(ClickType clickType)
     {
-        //Debug.Log("A mouse entered while in state: " + clickType);
+        
     }
     public virtual void OnLeave(ClickType clickType) 
     {
-        //Debug.Log("A mouse left while in state: " + clickType);
+        canFullClick = false;
     }
 }
