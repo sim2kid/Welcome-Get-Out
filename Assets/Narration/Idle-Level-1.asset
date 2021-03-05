@@ -10,6 +10,75 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
-  m_Name: Level-1
+  m_Name: Idle-Level-1
   m_EditorClassIdentifier: 
-  voiceLines: []
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: Who are you? What are you doing here?
+    m_AudioClip: {fileID: 8300000, guid: 81b0fa9bff3c22a4794934746d812a47, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 2
+    m_TextLine: A game? No there's nothing of the sort here, you need to leave immediately.
+      And don't touch anything!
+    m_AudioClip: {fileID: 8300000, guid: ec7e3c4c85662c24687d3468e77c79fd, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 8
+  - m_NextIndex: 3
+    m_TextLine: What are you waiting for, just close this window already! Leave!
+    m_AudioClip: {fileID: 8300000, guid: d98e8022eb86e894cb8d28b51bdf90b1, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 10
+  - m_NextIndex: 4
+    m_TextLine: "There\u2019s a big red \u2018x\u2019 in the corner of the screen
+      for you to click."
+    m_AudioClip: {fileID: 8300000, guid: dea27f7116ad17d46bc6c115320cdc44, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 20
+  - m_NextIndex: 5
+    m_TextLine: "Well, it looks like you\u2019re not leaving, so let me give you
+      a cheat code. If you press Alt and f4 at the same time, you\u2019ll skip to
+      the win screen."
+    m_AudioClip: {fileID: 8300000, guid: 6869e5a76623b60419d3223e80a81c29, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 20
+  - m_NextIndex: 6
+    m_TextLine: Hello? Player? Are you even there?
+    m_AudioClip: {fileID: 8300000, guid: f583a684f5579ab4b9cdc35f8562e7d7, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 20
+  - m_NextIndex: 7
+    m_TextLine: Is anyone around? Anyone there at all?
+    m_AudioClip: {fileID: 8300000, guid: d03bf6880bea437448be3265b05ec2db, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 40
+  - m_NextIndex: 0
+    m_TextLine: Well if anyone is there, it seems that the original player has expired
+      and will need their body disposed of.
+    m_AudioClip: {fileID: 8300000, guid: ebe75313de4fad74f9bdf66f58afe3c2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
