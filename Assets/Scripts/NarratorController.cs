@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static DialogueTree;
 
-[RequireComponent(typeof(AudioControl))]
+[RequireComponent(typeof(AudioController))]
 public class NarratorController : MonoBehaviour, INarrator
 {
     [SerializeField]
@@ -13,13 +13,13 @@ public class NarratorController : MonoBehaviour, INarrator
     [SerializeField]
     private bool playOnStart = true;
 
-    private new AudioControl audio;
+    private new AudioController audio;
     protected float recordedTime;
     protected bool triggered;
 
     private void OnEnable()
     {
-        audio = GetComponent<AudioControl>();
+        audio = GetComponent<AudioController>();
     }
 
     private void Start()

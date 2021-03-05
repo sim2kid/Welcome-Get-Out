@@ -6,16 +6,16 @@ public class SoundEffect : Intractable
 {
     [SerializeField]
     private AudioClip soundToMake;
-    private AudioControl audioController;
+    private AudioController audioController;
 
     private void Start()
     {
         try
         {
-            audioController = GameObject.Find("SoundEffectController").GetComponent<AudioControl>();
+            audioController = GameObject.Find("SoundEffectController").GetComponent<AudioController>();
         } catch {
             Debug.Log("No Audio Controller. Making One...");
-            audioController = new GameObject().AddComponent<AudioControl>();
+            audioController = new GameObject().AddComponent<AudioController>();
             audioController.gameObject.name = "SoundEffectController";
         }
     }
