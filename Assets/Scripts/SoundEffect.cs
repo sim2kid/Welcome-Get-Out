@@ -12,11 +12,11 @@ public class SoundEffect : Intractable
     {
         try
         {
-            audioController = GameObject.Find("Audio").GetComponent<AudioControl>();
+            audioController = GameObject.Find("SoundEffectController").GetComponent<AudioControl>();
         } catch {
             Debug.Log("No Audio Controller. Making One...");
             audioController = new GameObject().AddComponent<AudioControl>();
-            audioController.gameObject.name = "Audio";
+            audioController.gameObject.name = "SoundEffectController";
         }
     }
 
