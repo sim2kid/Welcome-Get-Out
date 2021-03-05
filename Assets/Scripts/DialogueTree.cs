@@ -21,12 +21,12 @@ public class DialogueTree : ScriptableObject
         [SerializeField]
         private LineTriggers m_Trigger;
         [SerializeField]
-        private string m_TriggerVar;
+        private int m_TriggerVar;
 
         public string textLine => m_TextLine;
         public AudioClip audioClip => m_AudioClip;
         public LineTriggers trigger => m_Trigger;
-        public string triggerVariable => m_TriggerVar;
+        public int triggerVariable => m_TriggerVar;
         public int nextIndex => m_NextIndex;
     }
 
@@ -35,6 +35,7 @@ public class DialogueTree : ScriptableObject
     {
         None,
         OnTrigger,
+        OnEnd,
         OnWait
     }
 }

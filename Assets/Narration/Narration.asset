@@ -15,11 +15,16 @@ MonoBehaviour:
   voiceLines:
   - m_NextIndex: 1
     m_TextLine: This is the first line of text.
-    m_AudioClip: {fileID: 0}
-    m_Trigger: 1
+    m_AudioClip: {fileID: 8300000, guid: e41e4eb2832d21c44ae90639ba9e4106, type: 3}
+    m_Trigger: 2
     m_TriggerVar: 0
-  - m_NextIndex: 0
+  - m_NextIndex: 2
     m_TextLine: This is the second line of text.
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 161195fac53a7aa4ab01b7412faa3994, type: 3}
+    m_Trigger: 3
+    m_TriggerVar: 3
+  - m_NextIndex: 0
+    m_TextLine: Click To Continue
+    m_AudioClip: {fileID: 8300000, guid: bb360a8bdf83952408ac7ecd278d2bac, type: 3}
     m_Trigger: 1
     m_TriggerVar: 0
