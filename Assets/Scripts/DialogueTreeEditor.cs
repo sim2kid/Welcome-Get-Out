@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
@@ -91,3 +90,4 @@ public class DialogueTreeEditor : Editor
         EditorGUI.LabelField(rect, "Dialogue");
     }
 }
+#endif
