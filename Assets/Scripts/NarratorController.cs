@@ -16,6 +16,7 @@ public class NarratorController : MonoBehaviour, INarrator
     private new AudioController audio;
     protected float recordedTime;
     protected bool triggered;
+    private bool lastPlaying;
 
     private void OnEnable()
     {
@@ -55,6 +56,18 @@ public class NarratorController : MonoBehaviour, INarrator
                         if (OnWait(narration.voiceLines[index].triggerVariable))
                             NextLine();
                         break;
+                    case LineTriggers.OnEndWait:
+                        if (!audio.IsPlaying()) 
+                        {
+                            if (lastPlaying != audio.IsPlaying()) 
+                            {
+                                recordedTime = Time.time;
+                            }
+                            if (OnWait(narration.voiceLines[index].triggerVariable))
+                                NextLine();
+                        }
+                        lastPlaying = audio.IsPlaying();
+                        break;
                     default:
                         // Acts like None. Nothing will happen
                         break;
@@ -81,6 +94,8 @@ public class NarratorController : MonoBehaviour, INarrator
 
     protected void NextLine() 
     {
+        if(narration.voiceLines[index].runWhenTriggered != null)
+            narration.voiceLines[index].runWhenTriggered.Invoke();
         index = narration.voiceLines[index].nextIndex;
         PlayLine();
     }

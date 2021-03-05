@@ -18,9 +18,7 @@ public class DragConstraints : ClickAndDrag
     {
         Vector2 newPos = mouse.MouseLocation + offset;
         transform.position = new Vector3((x ? constrainedValues.x : newPos.x), (y ? constrainedValues.y : newPos.y), transform.position.z);
-        if (mouse.Click == ClickType.Clear)
-        {
-            OnUnclick();
-        }
+
+        base.OnHolding();
     }
 }
