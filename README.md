@@ -24,6 +24,10 @@ Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 Quinn Shaffer ([Website](https://qdshaffer.itch.io/))
 
 
+**Voice Actor (The Narrator)**<br>
+Holly Buchaniec ([Website](https://johnbuchaniechoard.com/))
+
+
 **Artist**<br>
 Yunyi Chen
 
