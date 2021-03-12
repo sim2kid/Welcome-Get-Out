@@ -4,7 +4,7 @@
 
 # Downloads:
 [Download the Latest Release Here](https://github.com/sim2kid/GAME/releases)<br>
-or [Play Online Here](https://github.com/sim2kid/GAME) //Dead Link, sorry
+or [Play Online Here](https://simm.games/GAME/)
 
 
 # Team Members:
