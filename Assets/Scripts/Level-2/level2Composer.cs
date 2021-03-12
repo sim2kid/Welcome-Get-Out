@@ -34,13 +34,14 @@ public class level2Composer : MonoBehaviour
     [SerializeField]
     private RockPaperScissors rps;
 
-    bool pickedUpScissors, chestClosed;
+    bool pickedUpScissors, chestClosed, won;
 
     void Start()
     {
         stage = 0;
         pickedUpScissors = false;
         chestClosed = true;
+        won = false;
     }
 
     public void RockOnGlass() 
@@ -62,6 +63,13 @@ public class level2Composer : MonoBehaviour
             paper.GetComponent<DragConstraints>().x = false;
             paper.GetComponent<DragConstraints>().y = false;
         }
+    }
+
+    private void Update()
+    {
+        if(won)
+            if(narrator.IsOver())
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Level-3");
     }
 
     public void openChest() 
@@ -109,6 +117,10 @@ public class level2Composer : MonoBehaviour
     public void onWin() 
     {
         //Goto Next Scene
-        narrator.NewNarration(dt_button, 0);
+        if (!won)
+        {
+            narrator.NewNarration(dt_button, 0);
+            won = true;
+        }
     }
 }
