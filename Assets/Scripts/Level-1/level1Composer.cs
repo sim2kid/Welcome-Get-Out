@@ -70,12 +70,13 @@ public class level1Composer : MonoBehaviour
 
     public void StartGame() 
     {
-        //Change scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level-2");
     }
 
     public void Settings() 
     {
         //IDEK HOW TO DO THIS
+        Debug.Log("Hey, Don't forget to add the Settings at some point!");
     }
 
     public void OpenCurtains() 
