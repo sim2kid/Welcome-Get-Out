@@ -53,6 +53,7 @@ public class NarratorController : MonoBehaviour, INarrator
                         {
                             if (lastPlaying != audio.IsPlaying())
                             {
+                                triggered = false;
                                 recordedTime = Time.time;
                             }
                             if (OnTrigger(narration.voiceLines[index].triggerVariable) || triggered)
