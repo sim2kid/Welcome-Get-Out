@@ -20,8 +20,8 @@ public class RockPaperScissors : MonoBehaviour
 
     void Start()
     {
-        player.Roll(0);
-        narrator.Roll(0);
+        player.Roll(1);
+        narrator.Roll(2);
         canCheat = true;
         listenForRoll = false;
     }
@@ -43,10 +43,10 @@ public class RockPaperScissors : MonoBehaviour
         player.Roll(what);
         if (canCheat)
         {
-            if(Random.Range(0,2) == 0)
+            //if(Random.Range(0,2) == 0)
                 narrator.Roll(whatBeatsThis(what));
-            else
-                narrator.Roll(what);
+            //else
+                //narrator.Roll(what);
         }
         else
         {
@@ -88,6 +88,21 @@ public class RockPaperScissors : MonoBehaviour
     private int whatBeatsThis(int one) 
     {
         switch (one) 
+        {
+            case 0:
+                return 1;
+            case 1:
+                return 2;
+            case 2:
+                return 0;
+            default:
+                return -1;
+        }
+    }
+
+    private int whatLossesThis(int one)
+    {
+        switch (one)
         {
             case 0:
                 return 1;
