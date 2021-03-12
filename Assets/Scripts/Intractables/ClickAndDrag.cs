@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ClickAndDrag : Intractable
 {
@@ -11,6 +12,9 @@ public class ClickAndDrag : Intractable
 
     private Vector2 startPos;
     private float tolerance = 0.1f;
+
+    [SerializeField]
+    private UnityEvent m_onDrag;
 
     private void OnEnable()
     {
@@ -37,7 +41,10 @@ public class ClickAndDrag : Intractable
         if (!blockClick)
         {
             if (Vector2.Distance(this.startPos, this.transform.position) > this.tolerance)
+            {
                 blockClick = true;
+                m_onDrag.Invoke();
+            }
         }
         if (mouse.Click == ClickType.Clear)
         {

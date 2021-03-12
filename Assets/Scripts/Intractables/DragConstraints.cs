@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DragConstraints : ClickAndDrag
 {
@@ -8,7 +9,7 @@ public class DragConstraints : ClickAndDrag
 
     [Header("Constrain Axis")]
     [SerializeField]
-    bool x, y;
+    public bool x, y;
     private void Start()
     {
         constrainedValues = transform.position;
