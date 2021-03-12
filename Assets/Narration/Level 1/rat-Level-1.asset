@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: rat-Level-1
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "Ugh, I knew this studio had rats! I\u2019ll have to call an exterminator
+      later."
+    m_AudioClip: {fileID: 8300000, guid: 08ffa624925847445b62f38815c485e7, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 10
+  - m_NextIndex: 2
+    m_TextLine: "Hey, didn\u2019t that rat look weird after it went off the side
+      of the stage? Must be my imagination"
+    m_AudioClip: {fileID: 8300000, guid: 8a5e9f301b4d6a740b3008f8eb1f5273, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 30
+  - m_NextIndex: 3
+    m_TextLine: Alright, this puzzle is just too complex for you. You should probably
+      just quit.
+    m_AudioClip: {fileID: 8300000, guid: c9e84abbfe0375e4b986d79f1d98cdd2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 20
+  - m_NextIndex: 4
+    m_TextLine: "I\u2019ll even make it easier for you. Click this button!"
+    m_AudioClip: {fileID: 8300000, guid: 972aff81b3dcca946a51466f4ee724fc, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 0
+    m_TextLine: "Go on! It won\u2019t take that long!"
+    m_AudioClip: {fileID: 8300000, guid: 729e09a7fe895ce4587187812257b316, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: openSesame-Level-1
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "Ah great, now you\u2019ve done it."
+    m_AudioClip: {fileID: 8300000, guid: 18bb17c9466488148ab77a40e2d0ff22, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 2
+    m_TextLine: "[Announcer] Hello! And Welcome to \u2018GAME\u2019!"
+    m_AudioClip: {fileID: 8300000, guid: 0d184abfefe1387448090b4f868ab449, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 3
+    m_TextLine: I always hated that guy. Well now that you know this is here, wElCoMe
+      tO gAmE. Ugg.
+    m_AudioClip: {fileID: 8300000, guid: 146100428e678f34c823c94334b04d4c, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 3
+  - m_NextIndex: 4
+    m_TextLine: "I now have to present you with a series of \u2018puzzles\u2019 for
+      some dang reason."
+    m_AudioClip: {fileID: 8300000, guid: 3183465ea69834b41b424e9a91ef1a59, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 3
+  - m_NextIndex: 5
+    m_TextLine: "Well, here\u2019s the main menu. I dropped it as a baby, so it may
+      be a little messed up."
+    m_AudioClip: {fileID: 8300000, guid: 5f2b2ecbea1adcb439cd1ac875144d3f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 0
+    m_TextLine: 
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0

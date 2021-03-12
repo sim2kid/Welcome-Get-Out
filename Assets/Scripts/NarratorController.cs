@@ -88,6 +88,11 @@ public class NarratorController : MonoBehaviour, INarrator
         }
     }
 
+    public bool IsOver() 
+    {
+        return narration.voiceLines[index].trigger == LineTriggers.None;
+    }
+
     private bool OnWait(int timeSeconds) 
     {
         return recordedTime + timeSeconds <= Time.time;
