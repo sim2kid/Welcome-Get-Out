@@ -22,8 +22,8 @@ MonoBehaviour:
     m_Trigger: 4
     m_TriggerVar: 3
   - m_NextIndex: 2
-    m_TextLine: A game? No there's nothing of the sort here, you need to leave immediately.
-      And don't touch anything!
+    m_TextLine: A game? No, there's nothing of the sort here, you should just go.
+      And don't touch anything on the way out!
     m_AudioClip: {fileID: 8300000, guid: ec7e3c4c85662c24687d3468e77c79fd, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
@@ -50,7 +50,7 @@ MonoBehaviour:
   - m_NextIndex: 5
     m_TextLine: "Well, it looks like you\u2019re not leaving, so let me give you
       a cheat code. If you press Alt and f4 at the same time, you\u2019ll skip to
-      the win screen."
+      the win screen. Go ahead, try it."
     m_AudioClip: {fileID: 8300000, guid: 6869e5a76623b60419d3223e80a81c29, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
@@ -58,7 +58,7 @@ MonoBehaviour:
     m_Trigger: 4
     m_TriggerVar: 20
   - m_NextIndex: 6
-    m_TextLine: Hello? Player? Are you even there?
+    m_TextLine: Hello? A-Are you even there?
     m_AudioClip: {fileID: 8300000, guid: f583a684f5579ab4b9cdc35f8562e7d7, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
