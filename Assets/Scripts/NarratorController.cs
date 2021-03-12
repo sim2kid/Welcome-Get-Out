@@ -48,6 +48,18 @@ public class NarratorController : MonoBehaviour, INarrator
                         if(OnTrigger(narration.voiceLines[index].triggerVariable) || triggered)
                             NextLine();
                         break;
+                    case LineTriggers.OnEndTrigger:
+                        if (!audio.IsPlaying())
+                        {
+                            if (lastPlaying != audio.IsPlaying())
+                            {
+                                recordedTime = Time.time;
+                            }
+                            if (OnTrigger(narration.voiceLines[index].triggerVariable) || triggered)
+                                NextLine();
+                        }
+                        lastPlaying = audio.IsPlaying();
+                        break;
                     case LineTriggers.OnEnd:
                         if(!audio.IsPlaying())
                             NextLine();

@@ -42,6 +42,7 @@ public class DialogueTree : ScriptableObject
         OnTrigger,
         OnEnd,
         OnWait,
-        OnEndWait
+        OnEndWait,
+        OnEndTrigger
     }
 }

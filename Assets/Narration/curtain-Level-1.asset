@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: curtain-Level-1
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "Ah ah ah! Don\u2019t touch that!"
+    m_AudioClip: {fileID: 8300000, guid: fbae994af17c7994f935d41d6a9ff822, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 2
+    m_TextLine: "Didn\u2019t your mother ever tell you to not touch other people\u2019s
+      stuff?"
+    m_AudioClip: {fileID: 8300000, guid: 1b17a5405426beb48b237f42a1a95279, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 0
+    m_TextLine: "There\u2019s nothing of interest behind those curtains, nothing
+      at all!"
+    m_AudioClip: {fileID: 8300000, guid: 24915f2d85454a44cb354dcdc26c51c9, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
