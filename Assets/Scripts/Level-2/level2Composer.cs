@@ -22,13 +22,25 @@ public class level2Composer : MonoBehaviour
     private DialogueTree dt_rock;
     [SerializeField]
     private DialogueTree dt_scissors;
+    [SerializeField]
+    private DialogueTree dt_ribbon;
+    [SerializeField]
+    private DialogueTree dt_button;
+
+    [SerializeField]
+    private Animator chest;
+
 
     [SerializeField]
     private RockPaperScissors rps;
 
+    bool pickedUpScissors, chestClosed;
+
     void Start()
     {
-        stage = 0;    
+        stage = 0;
+        pickedUpScissors = false;
+        chestClosed = true;
     }
 
     public void RockOnGlass() 
@@ -52,6 +64,17 @@ public class level2Composer : MonoBehaviour
         }
     }
 
+    public void openChest() 
+    {
+        if (chestClosed)
+        {
+            narrator.NewNarration(dt_ribbon, 0);
+            chestClosed = false;
+            chest.SetTrigger("Open");
+        }
+        
+    }
+
     public void UnlockOnDrag(int type) {
         GameObject obj = rock;
         switch (type)
@@ -64,6 +87,9 @@ public class level2Composer : MonoBehaviour
                 break;
             case 2:
                 obj = scissors;
+                if (!pickedUpScissors)
+                    narrator.NewNarration(dt_scissors, 0);
+                pickedUpScissors = true;
                 break;
         }
         obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, 20);
@@ -83,5 +109,6 @@ public class level2Composer : MonoBehaviour
     public void onWin() 
     {
         //Goto Next Scene
+        narrator.NewNarration(dt_button, 0);
     }
 }

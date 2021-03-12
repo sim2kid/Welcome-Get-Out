@@ -1081,7 +1081,7 @@ MonoBehaviour:
   scissors: {fileID: 1671534233}
   narrator: {fileID: 608394243}
   dt_rock: {fileID: 11400000, guid: 430190b5f4280fe4bbbdb000824dd37d, type: 2}
-  dt_scissors: {fileID: 0}
+  dt_scissors: {fileID: 11400000, guid: 9224fc4c2b0e3d9438b6860344b698df, type: 2}
   rps: {fileID: 1393209289}
 --- !u!4 &527336659
 Transform:
