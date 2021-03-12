@@ -16,6 +16,14 @@ public class level2Composer : MonoBehaviour
     private GameObject scissors;
 
     [SerializeField]
+    private NarratorController narrator;
+
+    [SerializeField]
+    private DialogueTree dt_rock;
+    [SerializeField]
+    private DialogueTree dt_scissors;
+
+    [SerializeField]
     private RockPaperScissors rps;
 
     void Start()
@@ -27,11 +35,14 @@ public class level2Composer : MonoBehaviour
     {
         if (stage < 3)
         {
+            if(stage == 0)
+                narrator.NewNarration(dt_rock, 0);
             glass.SetTrigger("Hit");
             stage++;
         }
         if (stage == 3)
         {
+            narrator.Trigger();
             rock.GetComponent<DragConstraints>().x = false;
             rock.GetComponent<DragConstraints>().y = false;
             scissors.GetComponent<DragConstraints>().x = false;
