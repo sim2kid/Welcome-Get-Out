@@ -392,7 +392,18 @@ MonoBehaviour:
       m_Calls: []
   m_onFullClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1601108892}
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -2002,7 +2013,18 @@ MonoBehaviour:
       m_Calls: []
   m_onFullClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1601108892}
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -2577,7 +2599,18 @@ MonoBehaviour:
       m_Calls: []
   m_onFullClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1601108892}
+        m_MethodName: Settings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -2724,6 +2757,7 @@ MonoBehaviour:
   ratamation: {fileID: 962815264}
   exitButton: {fileID: 178967853}
   exitAlt: {fileID: 273438393}
+  treeCount: 0
 --- !u!1 &1631664708
 GameObject:
   m_ObjectHideFlags: 0

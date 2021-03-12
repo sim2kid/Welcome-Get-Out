@@ -60,6 +60,24 @@ public class level1Composer : MonoBehaviour
         }
     }
 
+    public void Exit() 
+    {
+        Application.Quit();
+#if UNITY_EDITOR
+        Debug.Log("You tried to exit the game, but Unity can't quit, so you get this neat little messege instead! Hi Friends!");
+#endif
+    }
+
+    public void StartGame() 
+    {
+        //Change scene
+    }
+
+    public void Settings() 
+    {
+        //IDEK HOW TO DO THIS
+    }
+
     public void OpenCurtains() 
     {
         CurtainAnimator.SetTrigger("Open");
