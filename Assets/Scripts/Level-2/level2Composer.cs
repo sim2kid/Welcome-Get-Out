@@ -68,4 +68,9 @@ public class level2Composer : MonoBehaviour
     {
         rps.canCheat = false;
     }
+
+    public void onWin() 
+    {
+        //Goto Next Scene
+    }
 }

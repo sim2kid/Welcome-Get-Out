@@ -46,5 +46,56 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 1
+    m_Trigger: 5
     m_TriggerVar: 0
+  - m_NextIndex: 5
+    m_TextLine: "You\u2019re just as dumb as I thought you would be!"
+    m_AudioClip: {fileID: 8300000, guid: 5e7f7f143b5f8d14db4995ae558640d5, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 6
+    m_TextLine: "Did you get confused about what beats what? Alright, I\u2019ll explain
+      it to you"
+    m_AudioClip: {fileID: 8300000, guid: 86707ea9856c4784b97532c73974683a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 7
+    m_TextLine: Rock beats scissors, Scissors beats paper, and Paper beats rock
+    m_AudioClip: {fileID: 8300000, guid: 4ccc10bce9d4b2f4bba8feb1b0aa1343, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 8
+    m_TextLine: Did you finally get it or do you need me to say it again slower?
+    m_AudioClip: {fileID: 8300000, guid: 9139f258de56e3244b2bd7363fb0e384, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 9
+    m_TextLine: This has to be absolutley soul crushing for you, losing time after
+      time like this!
+    m_AudioClip: {fileID: 8300000, guid: e1824db5a8f41ea47a6b4de3a211fb6a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 0
+    m_TextLine: "I mean, how embarrassing that you can\u2019t even win a simple game
+      of rock, paper, scissors!"
+    m_AudioClip: {fileID: 8300000, guid: 6f4f32f2fc86c42468416547331ad004, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 1

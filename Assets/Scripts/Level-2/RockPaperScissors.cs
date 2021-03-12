@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RockPaperScissors : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class RockPaperScissors : MonoBehaviour
     private RollController player;
     [SerializeField]
     private RollController narrator;
+
+    [SerializeField]
+    private UnityEvent Loose;
+    [SerializeField]
+    private UnityEvent Win;
 
     public bool canCheat;
     private bool listenForRoll;
@@ -36,9 +42,16 @@ public class RockPaperScissors : MonoBehaviour
     {
         player.Roll(what);
         if (canCheat)
-            narrator.Roll(whatBeatsThis(what));
+        {
+            if(Random.Range(0,2) == 0)
+                narrator.Roll(whatBeatsThis(what));
+            else
+                narrator.Roll(what);
+        }
         else
+        {
             narrator.RollRandom();
+        }
         listenForRoll = true;
     }
 
@@ -49,10 +62,12 @@ public class RockPaperScissors : MonoBehaviour
             case 0:
                 //we win
                 Debug.Log("Win");
+                Win.Invoke();
                 break;
             case 1:
                 //Narrator Wins
                 Debug.Log("Loose");
+                Loose.Invoke();
                 break;
             case -1:
                 //Tie!

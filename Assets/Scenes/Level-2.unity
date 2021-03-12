@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 122058284}
   - component: {fileID: 122058283}
   - component: {fileID: 122058282}
+  - component: {fileID: 122058285}
   m_Layer: 0
   m_Name: Tie_0
   m_TagString: Untagged
@@ -216,13 +217,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122058281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.1505027, y: -1.077767, z: 20.001}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.1505027, y: -1.077767, z: -29.999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1525784624}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &122058285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122058281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.353908, y: 0.45800638, z: 14.376048}
+  m_Center: {x: 4.1257596, y: -0.16563284, z: -0.8890128}
 --- !u!1 &160298665
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,7 +1012,7 @@ Transform:
   - {fileID: 801312568}
   - {fileID: 306149588}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &456006142
 GameObject:
@@ -2382,6 +2396,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 895491583}
   narrator: {fileID: 1418447028}
+  Loose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 608394243}
+        m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Win:
+    m_PersistentCalls:
+      m_Calls: []
   canCheat: 0
 --- !u!4 &1393209290
 Transform:
@@ -2397,7 +2428,7 @@ Transform:
   - {fileID: 895491584}
   - {fileID: 1418447029}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397962675
 GameObject:
@@ -2497,7 +2528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397962675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.026279777, y: 3.7889805, z: -6.1999993}
+  m_LocalPosition: {x: 0.026279777, y: 3.7889805, z: -0.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1315675013}
@@ -2727,6 +2758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1525784624}
+  - component: {fileID: 1525784625}
   m_Layer: 0
   m_Name: MainMachine
   m_TagString: Untagged
@@ -2747,9 +2779,29 @@ Transform:
   m_Children:
   - {fileID: 1691916175}
   - {fileID: 1315675013}
+  - {fileID: 122058284}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1525784625
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525784623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbb1e8ec5d3ae874883f6d75296c815d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1547230109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,7 +3203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1788180689
 GameObject:
@@ -3313,7 +3365,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995164263
 GameObject:
