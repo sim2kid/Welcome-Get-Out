@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &290769328
+--- !u!1001 &902658277
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -220,13 +220,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b5cd3353c6c5a4cae20840e6189f09, type: 3}
---- !u!4 &290769329 stripped
+--- !u!4 &902658278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7604155180216683278, guid: c1b5cd3353c6c5a4cae20840e6189f09,
     type: 3}
-  m_PrefabInstance: {fileID: 290769328}
+  m_PrefabInstance: {fileID: 902658277}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &519414645
+--- !u!1 &1921758258
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,10 +234,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 519414646}
-  - component: {fileID: 519414649}
-  - component: {fileID: 519414648}
-  - component: {fileID: 519414647}
+  - component: {fileID: 1921758259}
+  - component: {fileID: 1921758262}
+  - component: {fileID: 1921758261}
+  - component: {fileID: 1921758260}
   m_Layer: 0
   m_Name: Narrator
   m_TagString: Untagged
@@ -245,27 +245,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &519414646
+--- !u!4 &1921758259
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519414645}
+  m_GameObject: {fileID: 1921758258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 290769329}
+  m_Father: {fileID: 902658278}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519414647
+--- !u!114 &1921758260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519414645}
+  m_GameObject: {fileID: 1921758258}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 281e674bf1aa2404ead50a2ed640eada, type: 3}
@@ -274,25 +274,25 @@ MonoBehaviour:
   narration: {fileID: 0}
   index: 0
   playOnStart: 1
---- !u!114 &519414648
+--- !u!114 &1921758261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519414645}
+  m_GameObject: {fileID: 1921758258}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d30c760e904bfb41b8ecb9a6f53982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &519414649
+--- !u!82 &1921758262
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519414645}
+  m_GameObject: {fileID: 1921758258}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
