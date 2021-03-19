@@ -32,7 +32,6 @@ public class DialogueTree : ScriptableObject
         public LineTriggers trigger => m_Trigger;
         public int triggerVariable => m_TriggerVar;
         public int nextIndex => m_NextIndex;
-        public UnityEvent runWhenTriggered => m_RunWhenTriggered;
     }
 
     [System.Serializable]
