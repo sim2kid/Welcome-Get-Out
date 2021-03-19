@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using static DialogueTree;
 
 [RequireComponent(typeof(AudioController))]
@@ -16,6 +17,7 @@ public class NarratorController : MonoBehaviour, INarrator
     private new AudioController audio;
     protected float recordedTime;
     protected bool triggered;
+    private UnityEvent triggerCallback;
     private bool lastPlaying;
 
     private void OnEnable()
@@ -57,7 +59,14 @@ public class NarratorController : MonoBehaviour, INarrator
                                 recordedTime = Time.time;
                             }
                             if (OnTrigger(narration.voiceLines[index].triggerVariable) || triggered)
+                            {
                                 NextLine();
+                                if (triggerCallback != null)
+                                {
+                                    triggerCallback.Invoke();
+                                    triggerCallback = null;
+                                }
+                            }
                         }
                         lastPlaying = audio.IsPlaying();
                         break;
@@ -107,6 +116,12 @@ public class NarratorController : MonoBehaviour, INarrator
 
     public void Trigger() 
     {
+        triggered = true;
+    }
+
+    public void Trigger(UnityEvent callback)
+    {
+        triggerCallback = callback;
         triggered = true;
     }
 
