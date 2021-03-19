@@ -119,6 +119,11 @@ public class NarratorController : MonoBehaviour, INarrator
         triggered = true;
     }
 
+    public void JumpToLine(int lineIndex) 
+    {
+        NextLine(lineIndex);
+    }
+
     public void Trigger(UnityEvent callback)
     {
         triggerCallback = callback;
@@ -127,9 +132,14 @@ public class NarratorController : MonoBehaviour, INarrator
 
     protected void NextLine() 
     {
-        if(narration.voiceLines[index].runWhenTriggered != null)
+        NextLine(narration.voiceLines[index].nextIndex);
+    }
+
+    protected void NextLine(int nextIndex)
+    {
+        if (narration.voiceLines[index].runWhenTriggered != null)
             narration.voiceLines[index].runWhenTriggered.Invoke();
-        index = narration.voiceLines[index].nextIndex;
+        index = nextIndex;
         PlayLine();
     }
 
