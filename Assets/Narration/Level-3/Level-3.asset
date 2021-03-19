@@ -218,11 +218,11 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 3
+    m_Trigger: 4
     m_TriggerVar: 2
   - m_NextIndex: 26
     m_TextLine: "I guess I\u2019ll have to take more drastic measures!"
-    m_AudioClip: {fileID: 8300000, guid: 78931b607a1e37043b436a81da8eaff2, type: 3}
+    m_AudioClip: {fileID: 8300000, guid: d6685120ab9aec645814256d31b43f00, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -246,7 +246,7 @@ MonoBehaviour:
     m_TriggerVar: 0
   - m_NextIndex: 29
     m_TextLine: "Good luck trying to fill the bar while it\u2019s on FIRE!"
-    m_AudioClip: {fileID: 8300000, guid: e8eee0ae929c961478bf6024c1a29c92, type: 3}
+    m_AudioClip: {fileID: 8300000, guid: 052574046eb37ce4f86a9681492ed83f, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
