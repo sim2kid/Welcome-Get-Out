@@ -252,3 +252,166 @@ MonoBehaviour:
         m_Calls: []
     m_Trigger: 5
     m_TriggerVar: 0
+  - m_NextIndex: 30
+    m_TextLine: "Don\u2019t touch my fire! You\u2019ll burn yourself!"
+    m_AudioClip: {fileID: 8300000, guid: 3bb03c5d56731894c8def6e111d64e17, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 31
+    m_TextLine: "Not that I care of course, I just don\u2019t want to be held liable
+      for any injuries"
+    m_AudioClip: {fileID: 8300000, guid: 9b0812897a73a594c8c2df399bd49355, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 32
+    m_TextLine: I should have made you sign a release form
+    m_AudioClip: {fileID: 8300000, guid: c4c94fb8e691dab429d7f42f15775321, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 33
+    m_TextLine: So you bested my fire, whatever, but can you beat THIS?!
+    m_AudioClip: {fileID: 8300000, guid: daa323d0652c01b47ac53533b391ba3d, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 34
+    m_TextLine: This ice is completely impenetrable!
+    m_AudioClip: {fileID: 8300000, guid: 41dc3547e792a0f489ef1358509faabe, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 35
+    m_TextLine: No clicking it away!
+    m_AudioClip: {fileID: 8300000, guid: 40d7476e1e059b44e89f681ad30bc70a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 36
+    m_TextLine: I just said the ice was impenetrable
+    m_AudioClip: {fileID: 8300000, guid: cae1c029685dba24ea1e311c0308ee4f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 37
+    m_TextLine: You need to get your ears checked!
+    m_AudioClip: {fileID: 8300000, guid: d39bcb25cadb4e346baecedb4607e0b1, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 38
+    m_TextLine: Man, is it getting hot in here or is it just me?
+    m_AudioClip: {fileID: 8300000, guid: 01f31fdb802ce514db29245fca477482, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 39
+    m_TextLine: "I swear the temperature just went up, I\u2019m sweating buckets!"
+    m_AudioClip: {fileID: 8300000, guid: 3d88947f996b29549840eb8d1935468a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 40
+    m_TextLine: NOOO, My ice!
+    m_AudioClip: {fileID: 8300000, guid: 307cfaf7e6f4c0547a0bafb30bb46504, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 41
+    m_TextLine: "What\u2019s happening. Why is it so hot in here!"
+    m_AudioClip: {fileID: 8300000, guid: 658290d3d0ba82a44b7075335665dd35, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 42
+    m_TextLine: "FINE, you know what, I\u2019m taking the button away, so there!"
+    m_AudioClip: {fileID: 8300000, guid: ea15c136ab3d51f4f9f9b20d30c0a032, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 43
+    m_TextLine: Good luck trying to fill the bar with no button!
+    m_AudioClip: {fileID: 8300000, guid: e202347424bb99146a7112055e7445cc, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 44
+    m_TextLine: Come on just give up already
+    m_AudioClip: {fileID: 8300000, guid: f9ffe53477c56de468efd1035b347847, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 45
+    m_TextLine: "You\u2019re not smart enough to solve these puzzles, I swear"
+    m_AudioClip: {fileID: 8300000, guid: 9061f80355cd6e7479807944ed23bbfe, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 46
+    m_TextLine: "Wait stop it, that\u2019s not even a button!"
+    m_AudioClip: {fileID: 8300000, guid: f0def87e5ae9c98449d9c5019462e5ee, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 47
+    m_TextLine: "Hold on I have something else to stop you, and it\u2019s really
+      powerful"
+    m_AudioClip: {fileID: 8300000, guid: c2708cc4ecb9bdf439b46f564c54d6f2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 48
+    m_TextLine: "I have\u2026 I have uhhhh\u2026 okay so I don\u2019t have anything,
+      but you should stop anyway"
+    m_AudioClip: {fileID: 8300000, guid: debe3eb0f62a971489f12b4e605843aa, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 49
+    m_TextLine: Okay you win, on to the next puzzle
+    m_AudioClip: {fileID: 8300000, guid: 61bb35b106c1a6e4d98025032c600d13, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
