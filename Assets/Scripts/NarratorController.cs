@@ -137,8 +137,6 @@ public class NarratorController : MonoBehaviour, INarrator
 
     protected void NextLine(int nextIndex)
     {
-        if (narration.voiceLines[index].runWhenTriggered != null)
-            narration.voiceLines[index].runWhenTriggered.Invoke();
         index = nextIndex;
         PlayLine();
     }
