@@ -90,3 +90,165 @@ MonoBehaviour:
         m_Calls: []
     m_Trigger: 5
     m_TriggerVar: 0
+  - m_NextIndex: 10
+    m_TextLine: Stop that! Are you an idiot? I told you not to touch anything?
+    m_AudioClip: {fileID: 8300000, guid: 06a1a0ef1a1da3f4ba142a5849856be6, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 11
+    m_TextLine: Maybe I wanted that bar empty, didja ever think of that?
+    m_AudioClip: {fileID: 8300000, guid: 0d97eb7e12ad98341bf4b1c3bf066641, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 12
+    m_TextLine: Seriously stop clicking that button!
+    m_AudioClip: {fileID: 8300000, guid: 7a3c85275ff346d4aa06ac9a411e7b03, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 13
+    m_TextLine: "Don\u2019t make me stop you!"
+    m_AudioClip: {fileID: 8300000, guid: d2355370b0540f348a4ae92a9e6c0e55, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 14
+    m_TextLine: I can and will stop you, no matter what!
+    m_AudioClip: {fileID: 8300000, guid: 4c96f17ad67aa4f45a0ffd62cbf33282, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 15
+    m_TextLine: "Yea! How d\u2019ya like that?"
+    m_AudioClip: {fileID: 8300000, guid: c0bc35a50dfe37c47b85203f45fbe79a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 16
+    m_TextLine: I control everything here, remember?
+    m_AudioClip: {fileID: 8300000, guid: e3d66811346b53441823c51c1bdb2fef, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 17
+    m_TextLine: "Oh that wasn\u2019t enough to discourage you?"
+    m_AudioClip: {fileID: 8300000, guid: 9eb5bf49c2d316e4ebede8a30215e347, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 18
+    m_TextLine: Alright, have another one!
+    m_AudioClip: {fileID: 8300000, guid: 1a8e68a488db50c4bbf12746c7481946, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 19
+    m_TextLine: I could keep this up ALL DAY
+    m_AudioClip: {fileID: 8300000, guid: 3dff8021080ba7f46960dec6b5dfbcbd, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 20
+    m_TextLine: You will never get this bar filled, so you might as well just give
+      up now
+    m_AudioClip: {fileID: 8300000, guid: d52b8a359a6bfaa44bca80fd1f6aff57, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 21
+    m_TextLine: I can even switch it up if I get bored
+    m_AudioClip: {fileID: 8300000, guid: 14a9c3cb4fa5db24787b60c43a2a8760, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 22
+    m_TextLine: "See I\u2019ve got soccer balls too!"
+    m_AudioClip: {fileID: 8300000, guid: 5c4f0b229c4a4c94e9506fb87ce249ab, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 23
+    m_TextLine: "Let\u2019s see what else have I got"
+    m_AudioClip: {fileID: 8300000, guid: 010a0f29cf8f7d247aff4da7e8c4fcec, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 24
+    m_TextLine: "Uh\u2026 oh! I have this! Uh, what is this? Some sort of bouncy
+      ball or something?"
+    m_AudioClip: {fileID: 8300000, guid: 8bc4a3142b741ee4194088a24fd196a6, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 25
+    m_TextLine: "You\u2019re still not going to stop are you?"
+    m_AudioClip: {fileID: 8300000, guid: 78931b607a1e37043b436a81da8eaff2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 3
+    m_TriggerVar: 2
+  - m_NextIndex: 26
+    m_TextLine: "I guess I\u2019ll have to take more drastic measures!"
+    m_AudioClip: {fileID: 8300000, guid: 78931b607a1e37043b436a81da8eaff2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 27
+    m_TextLine: AHAHAHAHA
+    m_AudioClip: {fileID: 8300000, guid: 273651290022c6346be1c8c8fe63272f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 28
+    m_TextLine: WITNESS MY GOD-LIKE POWERS AND FEAR ME!
+    m_AudioClip: {fileID: 8300000, guid: e8eee0ae929c961478bf6024c1a29c92, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 29
+    m_TextLine: "Good luck trying to fill the bar while it\u2019s on FIRE!"
+    m_AudioClip: {fileID: 8300000, guid: e8eee0ae929c961478bf6024c1a29c92, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
