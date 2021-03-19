@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: Level-3
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "Ignore this entire screen. There\u2019s nothing here, alright!?"
+    m_AudioClip: {fileID: 8300000, guid: d4eb3433c972f0e429704b639ff10bb4, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 2
+    m_TextLine: Nothing. Zilch. Keep it moving!
+    m_AudioClip: {fileID: 8300000, guid: 711a4fef76a7b4c4a8081d8e052f6575, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 3
+    m_TextLine: You completely broke the last computer, so I don't even want you
+      touching this one.
+    m_AudioClip: {fileID: 8300000, guid: 61d7736bb557cc646876f9ddc8dc09ec, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 4
+    m_TextLine: "Do you have any idea how long it\u2019s going to take to fix that
+      last machine?"
+    m_AudioClip: {fileID: 8300000, guid: c9f12099134cff1438d012b7ed4467c2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 5
+    m_TextLine: Our artists are going to have a fit!
+    m_AudioClip: {fileID: 8300000, guid: 513a0ce1469288a4087512486d72e229, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 6
+    m_TextLine: "Look there\u2019s nothing interesting here anyway."
+    m_AudioClip: {fileID: 8300000, guid: 9a9fa971d2b2ddf44be642dd4deb37ae, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 7
+    m_TextLine: "Just an empty bar and  a button that doesn\u2019t do anything, so
+      why don\u2019t you go ahead and click that big red X we were talking about
+      earlier."
+    m_AudioClip: {fileID: 8300000, guid: 7b3d9181bfaf69d42b29faef997ba2e8, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 8
+    m_TextLine: "You\u2019re terrible at following directions"
+    m_AudioClip: {fileID: 8300000, guid: 197da032dbdd1f941bb5fb2bdd7b68fa, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 9
+    m_TextLine: I doubt you could find your way out of a room with only one exit,
+      HAH!
+    m_AudioClip: {fileID: 8300000, guid: c7d329dca8b5ac9488de7c2fc736a1a1, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
