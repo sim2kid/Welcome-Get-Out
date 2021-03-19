@@ -43,8 +43,8 @@ public class Level3Composser : MonoBehaviour
                 break;
             case 16:
                 //Lightning and fire! ON!
-                fire.SetActive(false);
-                lightning.SetActive(false);
+                fire.SetActive(true);
+                lightning.SetActive(true);
                 Invoke("turnOffLightning", 1f);
                 break;
             case 18:
