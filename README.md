@@ -20,10 +20,6 @@ Owen Ravelo ([Website](https://simmgames.com))
 Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 
 
-**Programmer**<br>
-Quinn Shaffer ([Website](https://qdshaffer.itch.io/))
-
-
 **Voice Actor (The Narrator)**<br>
 Holly Buchaniec ([Website](https://johnbuchaniechoard.com/))
 
@@ -48,3 +44,37 @@ Thank the whole world :3
 # Ming's Update Corner:
 **March 5th:**<br>
 Voiceover is starting to record. Art have resolution problem and we will try to fix it ASAP this week. We plan to have two level done per week. LETS GO!
+
+
+**March 12th:**<br>
+We have first two level done, It looks great! 
+
+
+**March 19th:**<br>
+We have two more level done now, It is playable. First two level demo available!
+
+
+**March 26th:**<br>
+We have a programmer left the team (without doing work) now all the programming pressure moves on to Owen. That makes the project we are making harder now.
+
+
+**April 2rd:**<br>
+
+
+**April 9th:**<br>
+
+
+**April 16th:**<br>
+
+
+**April 23th:**<br>
+
+
+**April 30th:**<br>
+
+
+**May 7th:**<br>
+
+
+**May 14th:**<br>
+
