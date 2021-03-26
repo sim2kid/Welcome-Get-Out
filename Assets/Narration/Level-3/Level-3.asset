@@ -283,7 +283,7 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
+    m_Trigger: 1
     m_TriggerVar: 0
   - m_NextIndex: 34
     m_TextLine: This ice is completely impenetrable!
@@ -355,24 +355,24 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 1
   - m_NextIndex: 43
     m_TextLine: Good luck trying to fill the bar with no button!
     m_AudioClip: {fileID: 8300000, guid: e202347424bb99146a7112055e7445cc, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 10
   - m_NextIndex: 44
     m_TextLine: Come on just give up already
     m_AudioClip: {fileID: 8300000, guid: f9ffe53477c56de468efd1035b347847, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 8
   - m_NextIndex: 45
     m_TextLine: "You\u2019re not smart enough to solve these puzzles, I swear"
     m_AudioClip: {fileID: 8300000, guid: 9061f80355cd6e7479807944ed23bbfe, type: 3}

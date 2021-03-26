@@ -16,10 +16,12 @@ public class Level3Composser : MonoBehaviour
     [SerializeField]
     Sprite[] rocks;
     [SerializeField]
-    GameObject fire, lightning, ice;
+    GameObject fire, lightning, ice, button, rock;
     [SerializeField]
     Sprite[] icey;
 
+    Animator rockAni;
+    SpriteRenderer rockSprite;
 
     private int iceCount = 0;
     private int fireCount = 0;
@@ -34,6 +36,9 @@ public class Level3Composser : MonoBehaviour
             epoch = 0;
             startAt = 0;
         }
+        rockAni = rock.GetComponent<Animator>();
+        rockSprite = rock.GetComponent<SpriteRenderer>();
+        rockSprite.sprite = rocks[0];
         fireSize = fire.transform.localScale.x;
         fireCount = 10;
         iceCount = icey.Length;
@@ -43,6 +48,7 @@ public class Level3Composser : MonoBehaviour
         lightning.SetActive(false);
         fire.SetActive(false);
         ice.SetActive(false);
+        button.SetActive(true);
     }
 
     public void TriggerEpoch() 
@@ -52,9 +58,11 @@ public class Level3Composser : MonoBehaviour
         {
             case 12:
                 //Change to soccerball
+                rockSprite.sprite = rocks[1];
                 break;
             case 14:
                 //change to bouncy ball
+                rockSprite.sprite = rocks[2];
                 break;
             case 16:
                 //Lightning and fire! ON!
@@ -77,6 +85,10 @@ public class Level3Composser : MonoBehaviour
                 break;
             case 24:
                 ice.SetActive(false);
+                break;
+            case 28:
+                Debug.Log("Next Level!");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Level-4");
                 break;
         }
     }
@@ -112,10 +124,12 @@ public class Level3Composser : MonoBehaviour
                 case 13:
                 case 14:
                 case 15:
-                    progressBar.modifyProgress(0.01f);
+                    progressBar.modifyProgress(0.02f);
                     break;
                 case 24:
-                    progressBar.modifyProgress(0.05f);
+                    progressBar.modifyProgress(0.1f);
+                    narrator.Trigger(epochTrigger);
+                    button.SetActive(false);
                     break;
             }
         if (from == 1) // Fire
@@ -128,12 +142,23 @@ public class Level3Composser : MonoBehaviour
         if (from == 2) // Button (word)
             switch (epoch)
             {
-                case 0:
+                case 25:
+                    progressBar.modifyProgress(0.025f);
+                    narrator.JumpToLine(45);
+                    TriggerEpoch();
+                    break;
+                case 26:
+                    progressBar.modifyProgress(0.025f);
                     break;
             }
         if (from == 3) // Button (Ice)
             switch (epoch)
             {
+                case 22:
+                    melt();
+                    narrator.JumpToLine(39);
+                    TriggerEpoch();
+                    break;
                 case 21:
                     narrator.Trigger(epochTrigger);
                     break;
@@ -162,6 +187,12 @@ public class Level3Composser : MonoBehaviour
         if (fireCount == 0) {
             TriggerEpoch();
         }
+    }
+
+    private void rockFall() 
+    {
+        Debug.Log("BaDonk!");
+        rockAni.SetTrigger("Fall");
     }
 
     private void keepBetween(float min, float max) 
@@ -208,11 +239,7 @@ public class Level3Composser : MonoBehaviour
                     TriggerEpoch();
                 break;
             case 20:
-                if (narrator.atIndex() == 34)
-                    TriggerEpoch();
-                break;
-            case 22:
-                if (narrator.atIndex() == 38)
+                if (narrator.atIndex() == 34 && !narrator.IsTalking())
                     TriggerEpoch();
                 break;
             case 23:
@@ -228,10 +255,8 @@ public class Level3Composser : MonoBehaviour
                 keepBetween(0.70f, 0.8f);
                 break;
             case 19:
-                if (!narrator.IsTalking())
-                {
+                if (narrator.atIndex() == 32 && !narrator.IsTalking())
                     TriggerEpoch();
-                }
                 break;
             case 6:
             case 8:
@@ -246,8 +271,19 @@ public class Level3Composser : MonoBehaviour
                 {
                     progressBar.modifyProgress(-1);
                     narrator.Trigger(epochTrigger);
-                    Debug.Log("BaDonk!");
+                    rockFall();
                 }
+                break;
+            case 26:
+                if (progressBar.GetProgress() >= 1f) 
+                {
+                    narrator.JumpToLine(48);
+                    TriggerEpoch();
+                }
+                break;
+            case 27:
+                if (narrator.atIndex() == 48 && !narrator.IsTalking())
+                    TriggerEpoch();
                 break;
         }
         
