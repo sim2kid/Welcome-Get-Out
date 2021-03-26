@@ -97,7 +97,14 @@ public class NarratorController : MonoBehaviour, INarrator
             }
         }
     }
-
+    public bool IsTalking() 
+    {
+        return audio.IsPlaying();
+    }
+    public int atIndex()
+    {
+        return index;
+    }
     public bool IsOver() 
     {
         return narration.voiceLines[index].trigger == LineTriggers.None;
