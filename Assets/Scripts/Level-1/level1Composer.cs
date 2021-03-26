@@ -51,9 +51,13 @@ public class level1Composer : MonoBehaviour
                     ratamation.SetTrigger("RunRatRun");
                     break;
                 case 3:
-                    treeCount++;
-                    exitButton.transform.position = new Vector3(0, exitButton.transform.position.y, exitButton.transform.position.z);
-                    exitAlt.transform.position = new Vector3(50, exitAlt.transform.position.y, exitAlt.transform.position.z);
+                    float next = exitButton.transform.position.x - ((exitButton.transform.position.x/1.1f) * Time.deltaTime);
+                    exitButton.transform.position = new Vector3(next, exitButton.transform.position.y, exitButton.transform.position.z);
+                    exitButton.GetComponent<MirrorAsset>().ForceMoveUpdate();
+                    if (exitButton.transform.position.x <= 0.5 && -0.5 <= exitButton.transform.position.x) 
+                    {
+                        treeCount++;
+                    }
                     break;
             }
                 
