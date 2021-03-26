@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using static DialogueTree;
 
 [RequireComponent(typeof(AudioController))]
@@ -12,10 +13,13 @@ public class NarratorController : MonoBehaviour, INarrator
     private int index = 0;
     [SerializeField]
     private bool playOnStart = true;
+    [SerializeField]
+    SubtitleController subs;
 
     private new AudioController audio;
     protected float recordedTime;
     protected bool triggered;
+    private UnityEvent triggerCallback;
     private bool lastPlaying;
 
     private void OnEnable()
@@ -53,10 +57,18 @@ public class NarratorController : MonoBehaviour, INarrator
                         {
                             if (lastPlaying != audio.IsPlaying())
                             {
+                                triggered = false;
                                 recordedTime = Time.time;
                             }
                             if (OnTrigger(narration.voiceLines[index].triggerVariable) || triggered)
+                            {
                                 NextLine();
+                                if (triggerCallback != null)
+                                {
+                                    triggerCallback.Invoke();
+                                    triggerCallback = null;
+                                }
+                            }
                         }
                         lastPlaying = audio.IsPlaying();
                         break;
@@ -86,8 +98,17 @@ public class NarratorController : MonoBehaviour, INarrator
                 }
             }
         }
+        if (!IsTalking())
+            subs.Hide();
     }
-
+    public bool IsTalking() 
+    {
+        return audio.IsPlaying();
+    }
+    public int atIndex()
+    {
+        return index;
+    }
     public bool IsOver() 
     {
         return narration.voiceLines[index].trigger == LineTriggers.None;
@@ -109,11 +130,25 @@ public class NarratorController : MonoBehaviour, INarrator
         triggered = true;
     }
 
+    public void JumpToLine(int lineIndex) 
+    {
+        NextLine(lineIndex);
+    }
+
+    public void Trigger(UnityEvent callback)
+    {
+        triggerCallback = callback;
+        triggered = true;
+    }
+
     protected void NextLine() 
     {
-        if(narration.voiceLines[index].runWhenTriggered != null)
-            narration.voiceLines[index].runWhenTriggered.Invoke();
-        index = narration.voiceLines[index].nextIndex;
+        NextLine(narration.voiceLines[index].nextIndex);
+    }
+
+    protected void NextLine(int nextIndex)
+    {
+        index = nextIndex;
         PlayLine();
     }
 
@@ -121,9 +156,11 @@ public class NarratorController : MonoBehaviour, INarrator
     {
         if (narration.voiceLines[index].audioClip != null)
             audio.InterruptAudio(narration.voiceLines[index].audioClip);
-        if (narration.voiceLines[index].textLine != null) { }
-        // narration.voiceLines[index].textLine
-        // TODO Pass to closed captions script
+        if (narration.voiceLines[index].textLine != null)
+        {
+            subs.Show();
+            subs.SetText(narration.voiceLines[index].textLine);
+        }
         recordedTime = Time.time;
         triggered = false;
     }

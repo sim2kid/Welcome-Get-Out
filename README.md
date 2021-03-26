@@ -1,34 +1,39 @@
 # GAME
-Game is a adventure puzzle solve game. But unlike others, you won't be successful here and for sure you won't win the game.
-Don't believe it? Try it!
+<p>GAME is a narrator driven puzzle game. A cranky narrator guides you through a series of puzzles and challenges. He doesn't want you to succeed. Will you best him?</p>
 
 
 
-# Install:
-We don't have game ready yet
+# Wiki
+See the project [Wiki](https://github.com/sim2kid/GAME/wiki) for more info!
 
 
 
-# Team Member:
-**Team Leader/Designer/Artist**
-
+# Team Member
+**Team Leader/Designer/Artist**<br>
 Mingshen Wu ([Website](https://mingshenwu.myportfolio.com/))
 
 
-**Programmer/Designer/Scrum Master**
-
+**Scrum Master/Programmer/Designer**<br>
 Owen Ravelo ([Website](https://simmgames.com))
 
 
-**Artist**
+**Designer/Screenwriter**<br>
+Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 
+
+**Voice Actor (The Narrator)**<br>
+Holly Buchaniec ([Website](https://johnbuchaniechoard.com/))
+
+
+**Artist**<br>
 Yunyi Chen
 
 
 
-# Thanks:
-Thank the whole world :3
+# Download
+[Download the Latest Release Here](https://github.com/sim2kid/GAME/releases)<br>
 
+or
 
-# FAQ:
-There is no FAQ yet
+[Play Online Here](https://simm.games/GAME/)
+

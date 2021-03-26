@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: Button-Level-2
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: UGH FINE you win
+    m_AudioClip: {fileID: 8300000, guid: 750541028947636448d0f68827cbacb6, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 2
+    m_TextLine: "Congratulations, even though you had to cheat because you\u2019re
+      too dumb to win."
+    m_AudioClip: {fileID: 8300000, guid: cba7208b361fab546ab6ef1535975e6e, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 3
+    m_TextLine: "Let\u2019s just move on so that you can leave sooner."
+    m_AudioClip: {fileID: 8300000, guid: ce95735c279d64148916375da66177e4, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 0
+    m_TextLine: 
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
