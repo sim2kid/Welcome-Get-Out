@@ -12,4 +12,194 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
   m_Name: Level-5
   m_EditorClassIdentifier: 
-  voiceLines: []
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: Okay...Um...wait what line am I on again? Hold on...
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 2
+    m_TextLine: "Uhhh...let\u2019s see\u2026 OH here we are okay"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 3
+    m_TextLine: All you have to do is tell me what time I am thinking of right now!
+    m_AudioClip: {fileID: 8300000, guid: 3ee89e852ffc61b40ab3c52e56327682, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 10
+    m_TextLine: Now this one is so simple even you could get it right.
+    m_AudioClip: {fileID: 8300000, guid: f8ae7816fc08e6d4586c801b1b10fb62, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: -1
+    m_TextLine: Tick-tock player, time is literally ticking away.
+    m_AudioClip: {fileID: 8300000, guid: e3eae921dbfd051429070e228e78311f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: -1
+    m_TextLine: Oh! Have you finally figured it out?
+    m_AudioClip: {fileID: 8300000, guid: 80c1240c483c901439799b6ddfcb591f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 7
+    m_TextLine: WRONG! What's it like having the mental capacity of a five year old?
+    m_AudioClip: {fileID: 8300000, guid: 8c47698b058c667409082cdf8f78dba3, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 8
+    m_TextLine: Want to know a secret?
+    m_AudioClip: {fileID: 8300000, guid: 64de2d3378f67e245b5949e31212a53f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 9
+    m_TextLine: You'll never figure it out, because every minute I think of a new
+      time
+    m_AudioClip: {fileID: 8300000, guid: 3d6efe87ca3d72647891ef997dedb539, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 15
+  - m_NextIndex: 11
+    m_TextLine: "Why don\u2019t you check the time?"
+    m_AudioClip: {fileID: 8300000, guid: 1650312d5f2203f428f9cd58995894e1, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 15
+  - m_NextIndex: 4
+    m_TextLine: "Solve the puzzle and you\u2019ll unlock the gear which will help
+      you in the next puzzle yada yada yada"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 12
+    m_TextLine: "Do you even know how long you\u2019ve been trying to guess?"
+    m_AudioClip: {fileID: 8300000, guid: f6e446bd81eaf0242900f8c89f53e45a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 10
+  - m_NextIndex: 13
+    m_TextLine: I actually feel a bit sorry for you. Hah, NOT!
+    m_AudioClip: {fileID: 8300000, guid: 6a1f8813254429445b61c0b52f55cfea, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 10
+  - m_NextIndex: 14
+    m_TextLine: "This seems like it\u2019s going to take you a while"
+    m_AudioClip: {fileID: 8300000, guid: 98b5c8bad499c3c46b881030c41681c2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 10
+  - m_NextIndex: 15
+    m_TextLine: "I\u2019m going to go get a sandwich, you want anything? No?"
+    m_AudioClip: {fileID: 8300000, guid: cf76e0419d9d0b84ba20027beee0256a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 30
+  - m_NextIndex: 16
+    m_TextLine: Oh my god! This is so good! The deli across the street makes the
+      best pastrami on rye
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 20
+  - m_NextIndex: 17
+    m_TextLine: "You know that song from that one game show where the answers are
+      questions? Pretend I\u2019m singing that right now."
+    m_AudioClip: {fileID: 8300000, guid: 9851642fd297bd348a82539413fb6093, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 5
+  - m_NextIndex: 18
+    m_TextLine: I would actually sing it, but you know... copyright and everything,
+      such a hassle.
+    m_AudioClip: {fileID: 8300000, guid: f3fc3f46f40f41e459112d3edfb949aa, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: -1
+    m_TextLine: "I\u2019ll just whistle some non copyright music"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 20
+    m_TextLine: FINALLY!
+    m_AudioClip: {fileID: 8300000, guid: eb36ffc0ca3cde24aafa5d97fa52eee7, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 21
+    m_TextLine: Took you long enough!
+    m_AudioClip: {fileID: 8300000, guid: 52e9b46469a69cf4597627a9f20be13f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 22
+    m_TextLine: I thought we were going to be here until the end of time! Get it...
+      time?
+    m_AudioClip: {fileID: 8300000, guid: 89dbb93b7f60a3342bc92152689ef0f7, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: -1
+    m_TextLine: Just... grab the gear and let's move on.
+    m_AudioClip: {fileID: 8300000, guid: a8d0f619d22e4c24d8f22affe818fd36, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 3

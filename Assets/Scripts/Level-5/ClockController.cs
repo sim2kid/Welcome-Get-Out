@@ -14,7 +14,18 @@ public class ClockController : MonoBehaviour
     [SerializeField]
     GameObject second, minute, hour;
 
-    float minTime, secTime, hourTime;
+    float minTime, secTime, hourTime, amPM;
+
+    public int mTime
+    {
+        private set;
+        get;
+    }
+    public int hTime
+    {
+        private set;
+        get;
+    }
 
     public float MinuteAngle 
     {
@@ -61,14 +72,20 @@ public class ClockController : MonoBehaviour
     void Start()
     {
         modifier = 1;
-        SetTime(Random.Range(0,12), Random.Range(0, 60), Random.Range(0, 60));
+        SetTime(Random.Range(0,24), Random.Range(0, 60), System.DateTime.Now.Second);
         minPause = false;
     }
 
-    public void SetTime(float sec, float min, float hou) 
+    public void SetTime(float hou, float min, float sec) 
     {
         secTime = sec;
         minTime = min;
+        amPM = 0;
+        if (hourTime > 12) 
+        {
+            hourTime -= 12;
+            amPM = 1;
+        }
         hourTime = hou;
     }
 
@@ -94,17 +111,34 @@ public class ClockController : MonoBehaviour
         if (hourTime > 12)
         {
             hourTime -= 12;
+            amPM--;
         }
         if (hourTime <= 0)
         {
             hourTime += 12;
+            amPM++;
         }
 
+        if (amPM > 1) 
+        {
+            amPM = 0;
+        }
+        if (amPM < 0)
+        {
+            amPM = 1;
+        }
 
         setRotation(second, minuteToRotation(secTime));
         setRotation(minute, minuteToRotation(minTime));
         setRotation(hour, hourToRotation(hourTime, minTime));
 
-        m_Time = $"{((int)hourTime).ToString("D2")}:{((int)minTime).ToString("D2")}:{((int)secTime).ToString("D2")}";
+        float trueHour = hourTime + (amPM * 12);
+        if (trueHour >= 24) {
+            trueHour -= 24;
+        }
+        hTime = (int)trueHour;
+        mTime = (int)minTime;
+
+        m_Time = $"{((int)trueHour).ToString("D2")}:{((int)minTime).ToString("D2")}:{((int)secTime).ToString("D2")}";
     }
 }
