@@ -32,8 +32,9 @@ Yunyi Chen
 
 # Download
 [Download the Latest Release Here](https://github.com/sim2kid/GAME/releases)<br>
-
+/*
 or
 
 [Play Online Here](https://simm.games/GAME/)
+*/
 
