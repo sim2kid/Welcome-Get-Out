@@ -25,6 +25,10 @@ Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 Holly Buchaniec ([Website](https://johnbuchaniechoard.com/))
 
 
+**Sound effect**<br>
+William Bacchus
+
+
 **Artist**<br>
 Yunyi Chen
 
