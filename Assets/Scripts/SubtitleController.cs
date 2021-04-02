@@ -15,7 +15,7 @@ public class SubtitleController : MonoBehaviour
     {
         anime = GetComponent<Animator>();
         text = GetComponent<TextMeshPro>();
-        Hide();
+        Show();
         text.text = "";
     }
 
