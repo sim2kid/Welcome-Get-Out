@@ -13,6 +13,8 @@ public class NarratorController : MonoBehaviour, INarrator
     private int index = 0;
     [SerializeField]
     private bool playOnStart = true;
+    [SerializeField]
+    SubtitleController subs;
 
     private new AudioController audio;
     protected float recordedTime;
@@ -96,8 +98,17 @@ public class NarratorController : MonoBehaviour, INarrator
                 }
             }
         }
+        if (!IsTalking())
+            subs.Hide();
     }
-
+    public bool IsTalking() 
+    {
+        return audio.IsPlaying();
+    }
+    public int atIndex()
+    {
+        return index;
+    }
     public bool IsOver() 
     {
         return narration.voiceLines[index].trigger == LineTriggers.None;
@@ -145,9 +156,11 @@ public class NarratorController : MonoBehaviour, INarrator
     {
         if (narration.voiceLines[index].audioClip != null)
             audio.InterruptAudio(narration.voiceLines[index].audioClip);
-        if (narration.voiceLines[index].textLine != null) { }
-        // narration.voiceLines[index].textLine
-        // TODO Pass to closed captions script
+        if (narration.voiceLines[index].textLine != null)
+        {
+            subs.Show();
+            subs.SetText(narration.voiceLines[index].textLine);
+        }
         recordedTime = Time.time;
         triggered = false;
     }
