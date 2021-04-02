@@ -4,15 +4,47 @@ using UnityEngine;
 
 public class level4Composer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    bool lockette, key, win = false;
+    [SerializeField]
+    NarratorController narrator;
+    [SerializeField]
+    GameObject theBox, theUnlockedBox;
+
+    private void Start()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level-5");
+        theBox.SetActive(true);
+        theUnlockedBox.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LockClicked()
     {
-        
+        if (!lockette && !win) 
+        {
+            lockette = true;
+            narrator.JumpToLine(7);
+        }
+    }
+
+    public void KeyClicked()
+    {
+        if (!key && !win)
+        {
+            key = true;
+            narrator.JumpToLine(12);
+        }
+    }
+
+    public void Clock() 
+    { 
+        if(win)
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level-5");
+    }
+
+    public void Win()
+    {
+        theBox.SetActive(false);
+        theUnlockedBox.SetActive(true);
+        win = true;
+        narrator.JumpToLine(18);
     }
 }

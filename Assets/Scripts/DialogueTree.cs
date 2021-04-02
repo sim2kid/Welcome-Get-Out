@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(order = 0, fileName = "Dialogue", menuName = "Dialogue Tree")]
+[CreateAssetMenu(order = 3005, fileName = "Dialogue", menuName = "Dialogue Tree")]
 public class DialogueTree : ScriptableObject
 {
     public List<VoiceLine> voiceLines;
