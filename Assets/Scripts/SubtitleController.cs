@@ -11,16 +11,12 @@ public class SubtitleController : MonoBehaviour
 
     [SerializeField]
     bool visable;
-    private void OnEnable()
-    {
-        text.text = "";
-    }
 
     void Start()
     {
         anime = GetComponent<Animator>();
         text = GetComponent<TextMeshPro>();
-        Show();
+        text.text = "";
     }
 
     public void Show() 

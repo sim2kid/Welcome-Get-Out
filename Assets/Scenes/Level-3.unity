@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -564,7 +564,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 290769329}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519414647
 MonoBehaviour:
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   narration: {fileID: 11400000, guid: e9f2cabc2ed534743b6e0bb143b6123a, type: 2}
-  index: 0
+  index: 49
   playOnStart: 1
   subs: {fileID: 1558497672}
 --- !u!114 &519414648
@@ -1523,7 +1523,7 @@ PrefabInstance:
     - target: {fileID: 1187168233709078057, guid: 87faa98259c81ad4d8719f87369293fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1187168233709078057, guid: 87faa98259c81ad4d8719f87369293fe,
         type: 3}

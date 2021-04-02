@@ -19,16 +19,16 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 1
   - m_NextIndex: 2
     m_TextLine: Nothing. Zilch. Keep it moving!
     m_AudioClip: {fileID: 8300000, guid: 711a4fef76a7b4c4a8081d8e052f6575, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 1
   - m_NextIndex: 3
     m_TextLine: You completely broke the last computer, so I don't even want you
       touching this one.
@@ -36,8 +36,8 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 1
   - m_NextIndex: 4
     m_TextLine: "Do you have any idea how long it\u2019s going to take to fix that
       last machine?"
@@ -53,16 +53,16 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 1
   - m_NextIndex: 6
     m_TextLine: "Look there\u2019s nothing interesting here anyway."
     m_AudioClip: {fileID: 8300000, guid: 9a9fa971d2b2ddf44be642dd4deb37ae, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 2
-    m_TriggerVar: 0
+    m_Trigger: 4
+    m_TriggerVar: 1
   - m_NextIndex: 7
     m_TextLine: "Just an empty bar and  a button that doesn\u2019t do anything, so
       why don\u2019t you go ahead and click that big red X we were talking about
@@ -415,3 +415,11 @@ MonoBehaviour:
         m_Calls: []
     m_Trigger: 0
     m_TriggerVar: 0
+  - m_NextIndex: 0
+    m_TextLine: 
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 3
+    m_TriggerVar: 1
