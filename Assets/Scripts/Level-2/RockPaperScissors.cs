@@ -50,7 +50,7 @@ public class RockPaperScissors : MonoBehaviour
         }
         else
         {
-            narrator.RollRandom();
+            narrator.Roll(whatLossesThis(what));
         }
         listenForRoll = true;
     }
