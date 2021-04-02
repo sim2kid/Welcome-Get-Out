@@ -108,7 +108,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: SubTitlles Will go here so this is a long sentance to show where the text
-    will end up, So here we go yaba daba do.
+    will end up, So here we go yaba daba do. I'll add even more here just to show
+    off the cut off at the end!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fdd0058514553e45b55f328340d8379, type: 2}
   m_sharedMaterial: {fileID: 695577635829038594, guid: 4fdd0058514553e45b55f328340d8379,
@@ -136,8 +137,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.8
-  m_fontSizeBase: 10.8
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
