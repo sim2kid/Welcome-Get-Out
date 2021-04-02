@@ -7,13 +7,13 @@ public class level4Composer : MonoBehaviour
     bool lockette, key, win = false;
     [SerializeField]
     NarratorController narrator;
+    [SerializeField]
+    GameObject theBox, theUnlockedBox;
 
-    private void Update()
+    private void Start()
     {
-        if (win && narrator.IsOver()) 
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level-5");
-        }
+        theBox.SetActive(true);
+        theUnlockedBox.SetActive(false);
     }
 
     public void LockClicked()
@@ -34,12 +34,16 @@ public class level4Composer : MonoBehaviour
         }
     }
 
+    public void Clock() 
+    { 
+        if(win)
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level-5");
+    }
+
     public void Win()
     {
-        //Key disapears
-        //Lock unlocks
-        //Clock is in the box
-        //box becomes opened
+        theBox.SetActive(false);
+        theUnlockedBox.SetActive(true);
         win = true;
         narrator.JumpToLine(18);
     }
