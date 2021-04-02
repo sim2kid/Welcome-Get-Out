@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: Level-4
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "There\u2019s definitely nothing here, I swear"
+    m_AudioClip: {fileID: 8300000, guid: 1e34fc825f275d44cbef5b7b7dee2d6a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 2
+    m_TextLine: This is just where I keep my trusty box
+    m_AudioClip: {fileID: 8300000, guid: c58575db78ebf884d92cff6e2641d485, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 3
+    m_TextLine: Just.. my good ole box
+    m_AudioClip: {fileID: 8300000, guid: 5a606b745e615374fbf3786357edf49b, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 2
+  - m_NextIndex: 4
+    m_TextLine: "There\u2019s nothing related to the puzzle in here, just some personal
+      things"
+    m_AudioClip: {fileID: 8300000, guid: 736fa7b3ef1499a4d85ea6ad9529246e, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 5
+    m_TextLine: "Yup that\u2019s all, personal things, no puzzles whatsoever"
+    m_AudioClip: {fileID: 8300000, guid: f7098961d6bb1ee47bad6ba30394a701, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 5
+  - m_NextIndex: 6
+    m_TextLine: Am I starting to sound a little repetitive to you?
+    m_AudioClip: {fileID: 8300000, guid: 30d9f81dcbaca704c89ee605a07ab9f3, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 7
+    m_TextLine: Remind me to hire a better writer next time.
+    m_AudioClip: {fileID: 8300000, guid: 070c9f9465672374aabf9dde92f1b569, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
