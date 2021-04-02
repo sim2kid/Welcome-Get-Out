@@ -70,3 +70,103 @@ MonoBehaviour:
         m_Calls: []
     m_Trigger: 0
     m_TriggerVar: 0
+  - m_NextIndex: 8
+    m_TextLine: What? You thought you could get in without a key?
+    m_AudioClip: {fileID: 8300000, guid: 0714b1e1ec086124ea20b93882f79667, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 0
+  - m_NextIndex: 9
+    m_TextLine: "They should give you the record for the world\u2019s smartest person"
+    m_AudioClip: {fileID: 8300000, guid: 0d3b0cb7937ae08489588a2981605097, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 10
+    m_TextLine: "And I know what you\u2019re thinking"
+    m_AudioClip: {fileID: 8300000, guid: 7a1003eee81e18b4db055b5ccf66b942, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 11
+    m_TextLine: "You\u2019re probably thinking, 'dUh- iF tHeRe\u2019S a LoCk tHeRe
+      MuSt bE a kEy'"
+    m_AudioClip: {fileID: 8300000, guid: d8c5cf2f2f0dbc5469205f132d003f9d, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 0
+  - m_NextIndex: 12
+    m_TextLine: "Well you\u2019re wrong!"
+    m_AudioClip: {fileID: 8300000, guid: 47702e486a8e44046915e41895554331, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 13
+    m_TextLine: My key! Give that back!
+    m_AudioClip: {fileID: 8300000, guid: 9edb299da5fafde4a882206b374a0997, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 14
+    m_TextLine: "That key doesn\u2019t even go to this lock, so there\u2019s no point
+      in trying it"
+    m_AudioClip: {fileID: 8300000, guid: 6af06e1cbae037c40910cad3e3abac3a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 5
+  - m_NextIndex: 15
+    m_TextLine: "Don\u2019t even think about putting that key in that lock!"
+    m_AudioClip: {fileID: 8300000, guid: 171f0290531924d45a530f5e4995aef5, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 16
+    m_TextLine: There are personal things in there, remember?
+    m_AudioClip: {fileID: 8300000, guid: 91b969e7a56154246b6241961a5acd98, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 2
+  - m_NextIndex: 17
+    m_TextLine: "Of course you don\u2019t remember, you don\u2019t have the brain
+      capacity to remember anything"
+    m_AudioClip: {fileID: 8300000, guid: 6b01c5008c51aca42a2f3499c489910e, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 2
+  - m_NextIndex: 18
+    m_TextLine: "You don\u2019t have any respect for personal boundaries do you?"
+    m_AudioClip: {fileID: 8300000, guid: 02418ed4cfb8dfc4da4675932646b4a2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 19
+    m_TextLine: "Alright you caught me, there\u2019s another puzzle, but this is
+      the last one"
+    m_AudioClip: {fileID: 8300000, guid: 2167b592390948f4497e7e315cad9557, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
