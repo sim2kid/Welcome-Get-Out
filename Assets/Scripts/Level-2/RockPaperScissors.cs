@@ -50,7 +50,7 @@ public class RockPaperScissors : MonoBehaviour
         }
         else
         {
-            narrator.RollRandom();
+            narrator.Roll(whatLossesThis(what));
         }
         listenForRoll = true;
     }
@@ -105,11 +105,11 @@ public class RockPaperScissors : MonoBehaviour
         switch (one)
         {
             case 0:
-                return 1;
-            case 1:
                 return 2;
-            case 2:
+            case 1:
                 return 0;
+            case 2:
+                return 1;
             default:
                 return -1;
         }

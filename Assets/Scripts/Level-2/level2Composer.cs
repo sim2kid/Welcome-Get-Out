@@ -26,6 +26,8 @@ public class level2Composer : MonoBehaviour
     private DialogueTree dt_ribbon;
     [SerializeField]
     private DialogueTree dt_button;
+    [SerializeField]
+    private DialogueTree dt_RedButton;
 
     [SerializeField]
     private Animator chest;
@@ -111,7 +113,11 @@ public class level2Composer : MonoBehaviour
 
     public void turnOffCheats() 
     {
-        rps.canCheat = false;
+        if (rps.canCheat)
+        {
+            rps.canCheat = false;
+            narrator.NewNarration(dt_RedButton, 0);
+        }
     }
 
     public void onWin() 

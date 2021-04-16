@@ -17,8 +17,18 @@ public class MirrorAsset : DragConstraints
     protected override void OnHolding()
     {
         base.OnHolding();
+        moveOther();
+    }
+
+    private void moveOther() 
+    {
         bool onRight = transform.position.x < 0;
-        other.transform.position = new Vector3(transform.position.x + (onRight? mirrorOffset.x : -mirrorOffset.x), transform.position.y + mirrorOffset.y, transform.position.z);
+        other.transform.position = new Vector3(transform.position.x + (onRight ? mirrorOffset.x : -mirrorOffset.x), transform.position.y + mirrorOffset.y, transform.position.z);
+    }
+
+    public void ForceMoveUpdate() 
+    {
+        moveOther();
     }
 
     public override void OnFullClick()
