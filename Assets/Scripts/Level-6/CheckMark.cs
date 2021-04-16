@@ -14,6 +14,11 @@ public class CheckMark : MonoBehaviour
         updateAnimator();
     }
 
+    private void OnEnable()
+    {
+        updateAnimator();
+    }
+
     public void SetState(bool TorF) 
     {
         isTrue = TorF;
