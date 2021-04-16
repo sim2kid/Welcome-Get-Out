@@ -36,7 +36,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     m_Trigger: 4
-    m_TriggerVar: 8
+    m_TriggerVar: 3
   - m_NextIndex: 4
     m_TextLine: "Anyway, you solved all the puzzles and beat the game, hooray for
       you, don\u2019t let the door hit you on the way out."
