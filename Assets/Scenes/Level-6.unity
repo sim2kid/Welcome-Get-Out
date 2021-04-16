@@ -553,12 +553,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220729639}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.11827402, w: 0.992981}
+  m_LocalPosition: {x: 11.733662, y: 12.967273, z: -32.8}
   m_LocalScale: {x: 1.139015, y: 1.139015, z: 1.1390152}
   m_Children: []
-  m_Father: {fileID: 680448266}
-  m_RootOrder: 0
+  m_Father: {fileID: 689080199}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &220729642
 MonoBehaviour:
@@ -677,9 +677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sudoFloor: -8.07
   useSudoFloor: 1
-  speed: 9.8
+  speed: 30
   bounce: 0.2
-  useGravity: 0
+  useGravity: 1
   onGroundHit:
     m_PersistentCalls:
       m_Calls: []
@@ -2126,8 +2126,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.11827402, w: 0.992981}
   m_LocalPosition: {x: -8.02, y: 4.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 220729641}
+  m_Children: []
   m_Father: {fileID: 689080199}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.585}
@@ -2365,6 +2364,7 @@ Transform:
   - {fileID: 1398480666}
   - {fileID: 820339044}
   - {fileID: 842238414}
+  - {fileID: 220729641}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2691,7 +2691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sudoFloor: -8.43
   useSudoFloor: 1
-  speed: 8.18
+  speed: 30
   bounce: 0.2
   useGravity: 0
   onGroundHit:
@@ -3433,7 +3433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sudoFloor: -20
   useSudoFloor: 1
-  speed: 9.8
+  speed: 30
   bounce: 0.212
   useGravity: 1
   onGroundHit:
