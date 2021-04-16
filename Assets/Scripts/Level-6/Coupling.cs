@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class Coupling : MonoBehaviour
 {
     [SerializeField]
+    bool canCouple;
+    [SerializeField]
     GameObject toBindto;
     [SerializeField]
     float radius;
@@ -20,13 +22,23 @@ public class Coupling : MonoBehaviour
     private void Start()
     {
         isCoupled = false;
+        canCouple = true;
         TryToCouple();
+    }
+
+    private void OnEnable()
+    {
+        canCouple = true;
+    }
+    private void OnDisable()
+    {
+        canCouple = false;
     }
 
     public void TryToCouple() 
     {
         if (((Vector2)toBindto.transform.position
-            - (Vector2)transform.position).magnitude <= radius) 
+            - (Vector2)transform.position).magnitude <= radius && canCouple) 
         {
             Couple();
         }
