@@ -42,7 +42,7 @@ public class level6SceneComposer : MonoBehaviour
         {
             PlayMusic();
         }
-        if (narrator.atIndex() == 26 && narrator.IsOver()) 
+        if (narrator.atIndex() == 27 && narrator.IsOver() && won) 
         {
             nextLevel();
         }
@@ -125,8 +125,8 @@ public class level6SceneComposer : MonoBehaviour
     {
         if (!won) 
         {
-            won = true;
             narrator.JumpToLine(26);
+            won = true;
         }
     }
 

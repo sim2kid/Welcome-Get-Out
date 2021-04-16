@@ -232,5 +232,13 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 27
+    m_TextLine: 
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
     m_Trigger: 0
     m_TriggerVar: 0
