@@ -12,4 +12,225 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
   m_Name: Level-6
   m_EditorClassIdentifier: 
-  voiceLines: []
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "This level isn\u2019t finished yet"
+    m_AudioClip: {fileID: 8300000, guid: a9dac2a19ba91d34eae84a346909404b, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 2
+  - m_NextIndex: 2
+    m_TextLine: "There\u2019s some missing pieces I guess?"
+    m_AudioClip: {fileID: 8300000, guid: 8000d5470412a0a4db4d32ac592aac52, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 3
+    m_TextLine: "I don\u2019t know, talk to the devs"
+    m_AudioClip: {fileID: 8300000, guid: cb6be1827cac1394cb5f85496d9cb4eb, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 8
+  - m_NextIndex: 4
+    m_TextLine: "Anyway, you solved all the puzzles and beat the game, hooray for
+      you, don\u2019t let the door hit you on the way out."
+    m_AudioClip: {fileID: 8300000, guid: 04758786c4f50b343b99d31715f5018f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 16
+  - m_NextIndex: 5
+    m_TextLine: "You\u2019re still here? What, you want a medal or something?"
+    m_AudioClip: {fileID: 8300000, guid: 1b38951092d31504197a9b3e6d7992c3, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 6
+  - m_NextIndex: 6
+    m_TextLine: Fine, since you want to stick around we can listen to my favourite
+      song
+    m_AudioClip: {fileID: 8300000, guid: 92976a63939243544b917acd03a60828, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 7
+    m_TextLine: Get ready to have your ears blessed
+    m_AudioClip: {fileID: 8300000, guid: 714cc22cb9dbd3649adfd5c455145894, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 5
+  - m_NextIndex: 8
+    m_TextLine: YEA, WOOHOO
+    m_AudioClip: {fileID: 8300000, guid: 8e2ce3bcdda85584e96af6b65e2a9752, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 4
+  - m_NextIndex: 9
+    m_TextLine: "THIS IS THE BEST SONG YOU\u2019VE EVER HEARD, RIGHT?"
+    m_AudioClip: {fileID: 8300000, guid: f01740fc9e28a724eb34e82c5facda82, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 10
+    m_TextLine: HEY! WHAT ARE YOU DOING?
+    m_AudioClip: {fileID: 8300000, guid: f38b9c8759c4cc34cbd35467f022a145, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 11
+    m_TextLine: "DON\u2019T TURN IT DOWN!"
+    m_AudioClip: {fileID: 8300000, guid: 9e382c89b58350f439f906cc05bd0f5e, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 12
+    m_TextLine: "YOU\u2019LL RUIN THE SONG, THIS MUSIC IS MEANT TO BE PLAYED LOUD!"
+    m_AudioClip: {fileID: 8300000, guid: 82040808745f1a04d9946aaa4b603be9, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 5
+    m_TriggerVar: 0
+  - m_NextIndex: 13
+    m_TextLine: Hello? Is this thing on? I just had to check if you could actually
+      hear me since you NEVER LISTEN
+    m_AudioClip: {fileID: 8300000, guid: ae09978a916a30346b9ffb94ce215830, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 14
+    m_TextLine: You won't even let me have a little bit of fun while I'm forced to
+      watch you struggle to solve the easiest puzzle ever, will you?
+    m_AudioClip: {fileID: 8300000, guid: be5678364df4f2d4eb041b26a0c936d5, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 5
+  - m_NextIndex: 15
+    m_TextLine: Honestly I'm starting to feel a little unwanted here
+    m_AudioClip: {fileID: 8300000, guid: 6edd2a2340b45284b90850199b61bf58, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 16
+    m_TextLine: Oh! Are you finally going to fix something instead of breaking it?
+    m_AudioClip: {fileID: 8300000, guid: f3ef923f1d41abc40bc756c7a702f9f0, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 3
+  - m_NextIndex: 17
+    m_TextLine: Go ahead and put that gear right back on the settings button where
+      it belongs
+    m_AudioClip: {fileID: 8300000, guid: 7c57876213b3d37459169dfeb5b110e8, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 18
+    m_TextLine: At this point I'm not even surprised when you ignore me
+    m_AudioClip: {fileID: 8300000, guid: 25583706e6ae046438fa163f193ad56c, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 19
+    m_TextLine: That gear doesn't even go there!
+    m_AudioClip: {fileID: 8300000, guid: 22425f6a62a42d64fa2123996d67a2ab, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 4
+  - m_NextIndex: 20
+    m_TextLine: It's not going to fit so don't even bother trying
+    m_AudioClip: {fileID: 8300000, guid: 430bce40605a92341bbb855e71fabe13, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 21
+    m_TextLine: Don't bother with anything in there!
+    m_AudioClip: {fileID: 8300000, guid: 127af07d7ed9cfa42ae34ded7a30e839, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 22
+    m_TextLine: It's just random junk that doesn't mean anything!
+    m_AudioClip: {fileID: 8300000, guid: 61e0feb3e11889f4da5a8f45c248c8a3, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 23
+    m_TextLine: NO! Don't touch it!
+    m_AudioClip: {fileID: 8300000, guid: a6996a8312eac3c478da37dc467a757d, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 24
+    m_TextLine: It's locked up for a good reason!
+    m_AudioClip: {fileID: 8300000, guid: 913ebe2d419698e498dab615e35602e2, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 25
+    m_TextLine: S-Seriously! You're going to regret it!
+    m_AudioClip: {fileID: 8300000, guid: ef20a86a53ac3fe45be68fff2d68c75b, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 26
+    m_TextLine: Don't say I didn't warn you!
+    m_AudioClip: {fileID: 8300000, guid: 69ac1dbdb19507d4595ead89076fee0a, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0
+  - m_NextIndex: 27
+    m_TextLine: "Oh great! Now you\u2019ve done it!"
+    m_AudioClip: {fileID: 8300000, guid: dfaed1c4a9885a045b3c69f91d6a0f22, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0

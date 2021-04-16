@@ -40,8 +40,8 @@ public class Coupling : MonoBehaviour
     public void UnCouple()
     {
         toBindto.transform.parent = this.transform.parent;
-        toBindto.transform.localPosition = new Vector3(toBindto.transform.localPosition.x,
-            toBindto.transform.localPosition.y, uncoupleOffset);
+        toBindto.transform.position = new Vector3(toBindto.transform.position.x,
+            toBindto.transform.position.y, transform.position.z + uncoupleOffset);
         onUnCouple.Invoke();
     }
 }

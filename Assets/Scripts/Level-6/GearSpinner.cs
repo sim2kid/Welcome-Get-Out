@@ -9,17 +9,23 @@ public class GearSpinner : MonoBehaviour
     [SerializeField]
     private float rpm;
     [SerializeField]
-    public bool shake;
+    public bool IsActive;
+    [SerializeField]
+    public bool IsEngaged;
 
     void Update()
     {
-        if (shake)
-            goClockwise = !goClockwise;
-        this.transform.Rotate(new Vector3(0, 0, rpm * 6 * Time.deltaTime * (goClockwise ? -1 : 1)));
+        if (IsActive)
+            this.transform.Rotate(new Vector3(0, 0, rpm * 6 * Time.deltaTime * (goClockwise ? -1 : 1)));
     }
 
-    public void Shake(bool torf) 
+    public void SetIsEngaged(bool torf)
     {
-        shake = torf;
+        IsEngaged = torf;
+    }
+
+    public void SetAcctive (bool torf) 
+    {
+        IsActive = torf;
     }
 }
