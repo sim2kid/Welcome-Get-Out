@@ -15,6 +15,8 @@ public class ClickAndDrag : Intractable
 
     [SerializeField]
     private UnityEvent m_onDrag;
+    [SerializeField]
+    private UnityEvent m_onDrop;
 
     private void OnEnable()
     {
@@ -70,7 +72,10 @@ public class ClickAndDrag : Intractable
         offset = Vector2.zero;
         base.OnUnclick();
 
-        blockClick = false;
+        if (blockClick) {
+            blockClick = false;
+            m_onDrop.Invoke();
+        }
     }
 
     public override void OnEnter(ClickType clickType)
