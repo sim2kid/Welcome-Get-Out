@@ -168,7 +168,7 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 5
+    m_Trigger: 2
     m_TriggerVar: 0
   - m_NextIndex: 20
     m_TextLine: You will never get this bar filled, so you might as well just give
@@ -185,7 +185,7 @@ MonoBehaviour:
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
-    m_Trigger: 5
+    m_Trigger: 2
     m_TriggerVar: 0
   - m_NextIndex: 22
     m_TextLine: "See I\u2019ve got soccer balls too!"

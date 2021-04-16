@@ -264,13 +264,7 @@ public class Level3Composser : MonoBehaviour
                 break;
             case 9:
             case 11:
-                if (progressBar.GetProgress() > 0.4f)
-                {
-                    progressBar.modifyProgress(-1);
-                    narrator.Trigger(epochTrigger);
-                    TriggerEpoch();
-                    rockFall();
-                }
+                epoch++;
                 break;
             case 6:
             case 8:
