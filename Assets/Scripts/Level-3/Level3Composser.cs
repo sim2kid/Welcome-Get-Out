@@ -56,7 +56,7 @@ public class Level3Composser : MonoBehaviour
         epoch++;
         switch (epoch)
         {
-            case 12:
+            case 11:
                 //Change to soccerball
                 rockSprite.sprite = rocks[1];
                 break;
@@ -120,11 +120,13 @@ public class Level3Composser : MonoBehaviour
                 case 9:
                 case 10:
                 case 11:
+                    progressBar.modifyProgress(0.02f);
+                    break;
                 case 12:
                 case 13:
                 case 14:
                 case 15:
-                    progressBar.modifyProgress(0.02f);
+                    progressBar.modifyProgress(0.04f);
                     break;
                 case 24:
                     progressBar.modifyProgress(0.1f);
@@ -137,6 +139,8 @@ public class Level3Composser : MonoBehaviour
             {
                 case 17:
                     reduceFire();
+                    if (narrator.atIndex() < 29)
+                        narrator.Trigger();
                     break;
             }
         if (from == 2) // Button (word)
@@ -258,20 +262,50 @@ public class Level3Composser : MonoBehaviour
                 if (narrator.atIndex() == 32 && !narrator.IsTalking())
                     TriggerEpoch();
                 break;
+            case 9:
+            case 11:
+                if (progressBar.GetProgress() > 0.4f)
+                {
+                    progressBar.modifyProgress(-1);
+                    narrator.Trigger(epochTrigger);
+                    TriggerEpoch();
+                    rockFall();
+                }
+                break;
             case 6:
             case 8:
-            case 9:
             case 10:
-            case 11:
-            case 12:
-            case 13:
-            case 14:
-            case 15:
-                if (progressBar.GetProgress() > 0.5f)
+                if (progressBar.GetProgress() > 0.4f)
                 {
                     progressBar.modifyProgress(-1);
                     narrator.Trigger(epochTrigger);
                     rockFall();
+                }
+                break;
+            case 12:
+            case 13:
+                if (progressBar.GetProgress() > 0.6f)
+                {
+                    progressBar.modifyProgress(-1);
+                    narrator.Trigger(epochTrigger);
+                    rockFall();
+                }
+                break;
+            case 14:
+                if (progressBar.GetProgress() > 0.8f)
+                {
+                    progressBar.modifyProgress(-1);
+                    narrator.Trigger(epochTrigger);
+                    rockFall();
+                }
+                break;
+            case 15:
+                if (progressBar.GetProgress() > 0.8f)
+                {
+                    progressBar.modifyProgress(-1);
+                    narrator.Trigger(epochTrigger);
+                    if(narrator.atIndex() != 25)
+                        rockFall();
                 }
                 break;
             case 26:
