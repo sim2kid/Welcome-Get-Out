@@ -16,6 +16,9 @@ public class SettingsController : MonoBehaviour
     private CheckMark musicSetting;
     [SerializeField]
     public bool Open;
+    public bool isMusicPlaying;
+    [SerializeField]
+    level6SceneComposer sceneComposer;
 
     void Start()
     {
@@ -23,28 +26,43 @@ public class SettingsController : MonoBehaviour
         settingsGearGravity.ToggleGravity(false);
         settingsButton.SetActive(true);
         Open = false;
+        isMusicPlaying = false;
     }
 
     private void FixedUpdate()
     {
         settingsMenu.SetActive(Open);
+        if (!isMusicPlaying)
+        {
+            musicSetting.isTrue = false;
+        }
+        else if (!musicSetting.isTrue && isMusicPlaying) 
+        {
+            sceneComposer.StopMusic();
+        }
     }
 
     public void OpenMenu() 
     {
         Open = true;
         settingsMenu.SetActive(true);
+        if (isMusicPlaying && !sceneComposer.approchedMusic) 
+        {
+            sceneComposer.approchedMusic = true;
+            sceneComposer.ApprochTurnDown();
+        }
     }
 
     public void CloseMenu()
     {
         Open = false;
         settingsMenu.SetActive(false);
-        if (!musicSetting.isTrue)
+        if (!musicSetting.isTrue && isMusicPlaying)
         {
             settingsGear.enabled = true;
             settingsButton.SetActive(false);
             settingsGearGravity.ToggleGravity(true);
+            sceneComposer.GearFall();
         }
     }
 

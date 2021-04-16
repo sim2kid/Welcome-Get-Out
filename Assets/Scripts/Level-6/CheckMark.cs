@@ -14,7 +14,7 @@ public class CheckMark : MonoBehaviour
         updateAnimator();
     }
 
-    private void OnEnable()
+    private void FixedUpdate()
     {
         updateAnimator();
     }
