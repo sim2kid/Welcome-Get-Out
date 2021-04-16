@@ -1,3 +1,4 @@
+![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/Logo.png)
 # GAME
 <p>GAME is a narrator driven puzzle game. A cranky narrator guides you through a series of puzzles and challenges. He doesn't want you to succeed. Will you best him?</p>
 
