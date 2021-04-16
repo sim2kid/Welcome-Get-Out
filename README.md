@@ -1,4 +1,6 @@
 ![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/Logo.png)
+
+
 # GAME
 <p>GAME is a narrator driven puzzle game. A cranky narrator guides you through a series of puzzles and challenges. He doesn't want you to succeed. Will you best him?</p>
 
@@ -37,6 +39,10 @@ Yunyi Chen
 
 # Download
 [Download the Latest Release Here](https://github.com/sim2kid/GAME/releases)<br>
+
+
 or
+
+
 [Play Online Here](https://simm.games/game)
 
