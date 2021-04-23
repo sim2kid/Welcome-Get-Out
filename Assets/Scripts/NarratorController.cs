@@ -21,6 +21,11 @@ public class NarratorController : MonoBehaviour, INarrator
     protected bool triggered;
     private UnityEvent triggerCallback;
     private bool lastPlaying;
+    private float subTime;
+
+    private float timePerCharacter = 0.1f;
+
+    private bool started = false;
 
     private void OnEnable()
     {
@@ -33,13 +38,15 @@ public class NarratorController : MonoBehaviour, INarrator
         // If everything is set up, We'll play the first audio line
         if (narration != null && playOnStart)
             if (narration.voiceLines.Count > index && index >= 0)
-                PlayLine();
+            {
+                Invoke("PlayLine", 1);
+            }
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (narration != null) {
+        if (narration != null && started) {
             //Make sure the index is inbounds
             if (narration.voiceLines.Count > index && index >= 0) {
                 //Trigger listeners
@@ -53,9 +60,9 @@ public class NarratorController : MonoBehaviour, INarrator
                             NextLine();
                         break;
                     case LineTriggers.OnEndTrigger:
-                        if (!audio.IsPlaying())
+                        if (!IsTalking())
                         {
-                            if (lastPlaying != audio.IsPlaying())
+                            if (lastPlaying != IsTalking())
                             {
                                 triggered = false;
                                 recordedTime = Time.time;
@@ -70,10 +77,10 @@ public class NarratorController : MonoBehaviour, INarrator
                                 }
                             }
                         }
-                        lastPlaying = audio.IsPlaying();
+                        lastPlaying = IsTalking();
                         break;
                     case LineTriggers.OnEnd:
-                        if(!audio.IsPlaying())
+                        if(!IsTalking())
                             NextLine();
                         break;
                     case LineTriggers.OnWait:
@@ -81,16 +88,16 @@ public class NarratorController : MonoBehaviour, INarrator
                             NextLine();
                         break;
                     case LineTriggers.OnEndWait:
-                        if (!audio.IsPlaying()) 
+                        if (!IsTalking()) 
                         {
-                            if (lastPlaying != audio.IsPlaying()) 
+                            if (lastPlaying != IsTalking()) 
                             {
                                 recordedTime = Time.time;
                             }
                             if (OnWait(narration.voiceLines[index].triggerVariable))
                                 NextLine();
                         }
-                        lastPlaying = audio.IsPlaying();
+                        lastPlaying = IsTalking();
                         break;
                     default:
                         // Acts like None. Nothing will happen
@@ -100,10 +107,20 @@ public class NarratorController : MonoBehaviour, INarrator
         }
         if (!IsTalking())
             subs.Hide();
+        if (subTime > 0)
+            subTime -= Time.deltaTime;
+        Debug.Log(subTime);
     }
-    public bool IsTalking() 
+    public bool IsTalking()
     {
-        return audio.IsPlaying();
+        if (narration.voiceLines[index].audioClip != null) 
+        {
+            return audio.IsPlaying();
+        }
+        else 
+        {
+            return subTime > 0;
+        }
     }
     public int atIndex()
     {
@@ -154,8 +171,12 @@ public class NarratorController : MonoBehaviour, INarrator
 
     private void PlayLine() 
     {
+        started = true;
+        subTime = 0;
         if (narration.voiceLines[index].audioClip != null)
             audio.InterruptAudio(narration.voiceLines[index].audioClip);
+        else if (narration.voiceLines[index].textLine != null)
+            subTime = narration.voiceLines[index].textLine.Length * timePerCharacter + 1f;
         if (narration.voiceLines[index].textLine != null)
         {
             subs.Show();
