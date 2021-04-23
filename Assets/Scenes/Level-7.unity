@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281e674bf1aa2404ead50a2ed640eada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narration: {fileID: 0}
+  narration: {fileID: 11400000, guid: d1be4e98d9fc25c4382edbbfcdb97094, type: 2}
   index: 0
   playOnStart: 1
   subs: {fileID: 417419421}

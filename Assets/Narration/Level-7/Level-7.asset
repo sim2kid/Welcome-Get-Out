@@ -80,3 +80,101 @@ MonoBehaviour:
         m_Calls: []
     m_Trigger: 0
     m_TriggerVar: 0
+  - m_NextIndex: 9
+    m_TextLine: "Oh! You figured it out... I wasn\u2019t expecting that"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 10
+    m_TextLine: "Hmm, maybe you\u2019re smarter than I thought you were..."
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 11
+    m_TextLine: "What am I saying? It doesn\u2019t matter because you got lucky and
+      the chances of you getting the rest are absolutely NOTHING"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 12
+    m_TextLine: Go ahead and quit like the failure I know you are!
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 1
+  - m_NextIndex: 13
+    m_TextLine: Wow you got that one too!
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 14
+    m_TextLine: "You\u2019re actually pretty good at this"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 15
+    m_TextLine: Wait what am I saying? What are you doing to me?
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 16
+    m_TextLine: Please stop, you're going to ruin the game!
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 1
+  - m_NextIndex: 17
+    m_TextLine: Congratulations! You solved the final puzzle!
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 18
+    m_TextLine: "I should apologize for everything I said earlier, it was really
+      mean and I didn\u2019t mean to offend you"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 19
+    m_TextLine: "I knew you would get it, you\u2019re pretty smart"
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 20
+    m_TextLine: I really enjoyed playing with you and I hope you liked the game
+    m_AudioClip: {fileID: 0}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 1
