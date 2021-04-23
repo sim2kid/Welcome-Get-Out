@@ -176,7 +176,8 @@ public class NarratorController : MonoBehaviour, INarrator
         if (narration.voiceLines[index].audioClip != null)
             audio.InterruptAudio(narration.voiceLines[index].audioClip);
         else if (narration.voiceLines[index].textLine != null)
-            subTime = narration.voiceLines[index].textLine.Length * timePerCharacter + 1f;
+            if(narration.voiceLines[index].textLine.Length > 0)
+                subTime = narration.voiceLines[index].textLine.Length * timePerCharacter + 1f;
         if (narration.voiceLines[index].textLine != null)
         {
             subs.Show();

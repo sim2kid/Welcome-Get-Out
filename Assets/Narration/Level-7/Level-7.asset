@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voiceLines:
   - m_NextIndex: 1
-    m_TextLine: Okay I lied before, but you definitely 100% beat the game this time!
+    m_TextLine: Okay I lied before, but you definitely 100 percent beat the game
+      this time!
     m_AudioClip: {fileID: 0}
     m_RunWhenTriggered:
       m_PersistentCalls:
