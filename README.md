@@ -2,7 +2,7 @@
 
 
 # Welcome, Get Out!
-<p>***Welcome, Get Out!*** is a puzzle game where the cranky narrator really doesn't like you being there. There are 7 different hand-crafted levels with a witty narrator and his sarcastic comments trying to stop you from succeeding.<br>
+<p><i><b>Welcome, Get Out!</b></i> is a puzzle game where the cranky narrator really doesn't like you being there. There are 7 different hand-crafted levels with a witty narrator and his sarcastic comments trying to stop you from succeeding.<br>
 Will you best him?</p>
 
 
