@@ -109,7 +109,6 @@ public class NarratorController : MonoBehaviour, INarrator
             subs.Hide();
         if (subTime > 0)
             subTime -= Time.deltaTime;
-        Debug.Log(subTime);
     }
     public bool IsTalking()
     {

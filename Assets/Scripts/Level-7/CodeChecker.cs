@@ -19,7 +19,6 @@ public class CodeChecker : MonoBehaviour
     {
         isRelocating = false;
         ogLocation = transform.position.y;
-        relocateCode();
     }
 
     private void Update()
@@ -57,8 +56,8 @@ public class CodeChecker : MonoBehaviour
         return fixedBlocks++;
     }
 
-    public void relocateCode() 
+    public void RelocateCode() 
     {
-        
+        isRelocating = true;
     }
 }

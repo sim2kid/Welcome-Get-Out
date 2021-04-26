@@ -84,5 +84,6 @@ public class ClickAndDrag : Intractable
         {
             OnUnclick();
         }
+        base.OnEnter(clickType);
     }
 }

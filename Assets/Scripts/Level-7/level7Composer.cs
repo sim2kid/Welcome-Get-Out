@@ -18,10 +18,12 @@ public class level7Composer : MonoBehaviour
         hovered = false;
     }
 
-    public void onHover() {
+    public void onHover() 
+    {
         if (!hovered) 
         {
             narrator.JumpToLine(3);
+            hovered = true;
         }
     }
 
@@ -36,6 +38,7 @@ public class level7Composer : MonoBehaviour
         {
             epoch++;
             narrator.JumpToLine(12);
+            check.RelocateCode();
         }
         if (check.codeFixedAmount() == 3 && epoch == 2)
         {
