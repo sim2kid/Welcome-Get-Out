@@ -28,7 +28,7 @@ Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 Holly Buchaniec ([Website](https://johnbuchaniechoard.com/))
 
 
-**Sound effect**<br>
+**Sound Effects**<br>
 William Bacchus
 
 
