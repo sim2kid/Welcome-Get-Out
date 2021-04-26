@@ -1,8 +1,9 @@
 ![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/Logo.png)
 
 
-# GAME
-<p>GAME is a narrator driven puzzle game. A cranky narrator guides you through a series of puzzles and challenges. He doesn't want you to succeed. Will you best him?</p>
+# Welcome, Get Out!
+<p>***Welcome, Get Out!*** is a puzzle game where the cranky narrator really doesn't like you being there. There are 7 different hand-crafted levels with a witty narrator and his sarcastic comments trying to stop you from succeeding.<br>
+Will you best him?</p>
 
 
 
