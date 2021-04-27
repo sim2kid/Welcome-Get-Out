@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -298,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122058281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.1505027, y: -1.077767, z: -29.999}
+  m_LocalPosition: {x: -4.1505027, y: -1.077767, z: -23.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525784624}
@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 170349085}
   - component: {fileID: 170349088}
   - component: {fileID: 170349087}
+  - component: {fileID: 170349089}
   m_Layer: 9
   m_Name: Player Paper
   m_TagString: Untagged
@@ -445,7 +446,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1297522547}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &170349087
 MonoBehaviour:
@@ -461,10 +462,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 170349089}
+        m_MethodName: ToggleGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onUnclick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1297522548}
+        m_MethodName: TryToCouple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onFullClick:
     m_PersistentCalls:
       m_Calls: []
@@ -488,6 +511,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1297522548}
+        m_MethodName: UnCouple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onDrop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 170349089}
+        m_MethodName: ToggleGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   x: 1
   y: 1
 --- !u!65 &170349088
@@ -503,6 +551,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8710397, y: 1.8400126, z: 0.2}
   m_Center: {x: -0.07350427, y: -0.042002678, z: 0}
+--- !u!114 &170349089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170349084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc0934b06c7f744eab03c98a25a09bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sudoFloor: -9.09
+  useSudoFloor: 1
+  speed: 9.8
+  bounce: 0
+  useGravity: 0
+  onGroundHit:
+    m_PersistentCalls:
+      m_Calls: []
+  hitTollarance: 0
 --- !u!1 &172964381
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +795,7 @@ MonoBehaviour:
   m_onLeave:
     m_PersistentCalls:
       m_Calls: []
+  lockClosed: 0
 --- !u!65 &213880797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -849,7 +919,7 @@ Transform:
   m_LocalScale: {x: 0.74482673, y: 0.74482673, z: 0.74482673}
   m_Children: []
   m_Father: {fileID: 669077672}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &241877949
 SpriteRenderer:
@@ -1145,6 +1215,7 @@ MonoBehaviour:
   m_onLeave:
     m_PersistentCalls:
       m_Calls: []
+  lockClosed: 0
 --- !u!65 &306149590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1715,6 +1786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 669077672}
+  - component: {fileID: 669077673}
   m_Layer: 0
   m_Name: Scissors
   m_TagString: Untagged
@@ -1733,11 +1805,56 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1671534235}
   - {fileID: 241877948}
+  - {fileID: 1671534235}
   m_Father: {fileID: 895491584}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669077673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669077671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1274909c0490d324b8053f7bd9c3158e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canCouple: 0
+  toBindto: {fileID: 1671534233}
+  radius: 0.5
+  uncoupleOffset: -20
+  onCouple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1671534239}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUnCouple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1671534239}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  isCoupled: 1
 --- !u!1 &799984500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +2078,7 @@ MonoBehaviour:
   m_onLeave:
     m_PersistentCalls:
       m_Calls: []
+  lockClosed: 0
 --- !u!65 &801312570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2038,6 +2156,7 @@ GameObject:
   - component: {fileID: 939317248}
   - component: {fileID: 939317250}
   - component: {fileID: 939317251}
+  - component: {fileID: 939317252}
   m_Layer: 9
   m_Name: Player Rock
   m_TagString: Untagged
@@ -2107,7 +2226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1995164264}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &939317250
 BoxCollider:
@@ -2136,10 +2255,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 939317252}
+        m_MethodName: ToggleGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onUnclick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1995164265}
+        m_MethodName: TryToCouple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_onFullClick:
     m_PersistentCalls:
       m_Calls:
@@ -2174,8 +2315,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1995164265}
+        m_MethodName: UnCouple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onDrop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 939317252}
+        m_MethodName: ToggleGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   x: 1
   y: 1
+--- !u!114 &939317252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939317247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc0934b06c7f744eab03c98a25a09bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sudoFloor: -9.4
+  useSudoFloor: 1
+  speed: 15
+  bounce: 0
+  useGravity: 0
+  onGroundHit:
+    m_PersistentCalls:
+      m_Calls: []
+  hitTollarance: 0
 --- !u!1001 &996717531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2417,7 +2604,7 @@ Transform:
   m_LocalScale: {x: 0.76832134, y: 0.76832134, z: 0.76832134}
   m_Children: []
   m_Father: {fileID: 1995164264}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1068667689
 SpriteRenderer:
@@ -2640,6 +2827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297522547}
+  - component: {fileID: 1297522548}
   m_Layer: 0
   m_Name: Paper
   m_TagString: Untagged
@@ -2658,11 +2846,56 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 170349086}
   - {fileID: 1984818318}
+  - {fileID: 170349086}
   m_Father: {fileID: 895491584}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1297522548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297522546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1274909c0490d324b8053f7bd9c3158e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canCouple: 0
+  toBindto: {fileID: 170349084}
+  radius: 0.5
+  uncoupleOffset: -20
+  onCouple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 170349089}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUnCouple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 170349089}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  isCoupled: 1
 --- !u!1 &1298602243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3360,7 @@ MonoBehaviour:
   m_onLeave:
     m_PersistentCalls:
       m_Calls: []
+  lockClosed: 1
 --- !u!65 &1397962680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3453,6 +3687,7 @@ GameObject:
   - component: {fileID: 1671534236}
   - component: {fileID: 1671534237}
   - component: {fileID: 1671534238}
+  - component: {fileID: 1671534239}
   m_Layer: 9
   m_Name: Player Scissors
   m_TagString: Untagged
@@ -3522,7 +3757,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 669077672}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1671534236
 BoxCollider:
@@ -3551,10 +3786,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1671534239}
+        m_MethodName: ToggleGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onUnclick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 669077673}
+        m_MethodName: TryToCouple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_onFullClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3577,6 +3834,31 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 669077673}
+        m_MethodName: UnCouple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onDrop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1671534239}
+        m_MethodName: ToggleGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   x: 1
   y: 1
@@ -3606,6 +3888,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1671534239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671534233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc0934b06c7f744eab03c98a25a09bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sudoFloor: -9.09
+  useSudoFloor: 1
+  speed: 15
+  bounce: 0
+  useGravity: 0
+  onGroundHit:
+    m_PersistentCalls:
+      m_Calls: []
+  hitTollarance: 0
 --- !u!1 &1691916174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3951,43 +4254,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1883204714 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7604155180216683273, guid: c1b5cd3353c6c5a4cae20840e6189f09,
-    type: 3}
-  m_PrefabInstance: {fileID: 996717531}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1883204717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883204714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &1965981397
 GameObject:
   m_ObjectHideFlags: 0
@@ -4193,7 +4459,7 @@ Transform:
   m_LocalScale: {x: 0.7135464, y: 0.7135464, z: 0.7135464}
   m_Children: []
   m_Father: {fileID: 1297522547}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1984818319
 SpriteRenderer:
@@ -4254,6 +4520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995164264}
+  - component: {fileID: 1995164265}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -4272,11 +4539,56 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 939317249}
   - {fileID: 1068667688}
+  - {fileID: 939317249}
   m_Father: {fileID: 895491584}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995164265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995164263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1274909c0490d324b8053f7bd9c3158e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canCouple: 0
+  toBindto: {fileID: 939317247}
+  radius: 0.5
+  uncoupleOffset: -20
+  onCouple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 939317252}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUnCouple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 939317252}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  isCoupled: 1
 --- !u!1 &2101762926
 GameObject:
   m_ObjectHideFlags: 0
