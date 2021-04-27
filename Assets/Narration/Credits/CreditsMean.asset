@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: CreditsMean
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: "Ugh the credits, You don\u2019t want to see these."
+    m_AudioClip: {fileID: 8300000, guid: 945325f50a8596147b265b53de9335d3, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 2
+    m_TextLine: "It\u2019s just the people responsible for creating this mess"
+    m_AudioClip: {fileID: 8300000, guid: 34ab8dd161b7ee44ea00896c49c3f1b0, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 3
+    m_TextLine: Personally I think I could have done a better job
+    m_AudioClip: {fileID: 8300000, guid: 615f0ed636aeeaf448be429a6853be06, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 2
+  - m_NextIndex: 4
+    m_TextLine: Designer this, programmer that, WHO CARES!?
+    m_AudioClip: {fileID: 8300000, guid: ab6aae5a2086cca46a5c3d649ae71078, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 5
+    m_TextLine: Look at this this game and tell me they're not better off flipping
+      burgers
+    m_AudioClip: {fileID: 8300000, guid: c8447819a206a6d4ba09224d03915570, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 4
+  - m_NextIndex: 6
+    m_TextLine: The only one that matters here... is me!
+    m_AudioClip: {fileID: 8300000, guid: 73b80de509d02d24390efab8471d1d66, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 4
+  - m_NextIndex: 7
+    m_TextLine: "If fact, why don\u2019t I just\u2026"
+    m_AudioClip: {fileID: 8300000, guid: 6a10de9e5ee9d634a87a675fcde8dea4, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 4
+  - m_NextIndex: 8
+    m_TextLine: "Hmmm\u2026 and maybe just a little of this\u2026"
+    m_AudioClip: {fileID: 8300000, guid: 5c92872a668147440b8aa89329787082, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 3
+    m_TriggerVar: 7
+  - m_NextIndex: 9
+    m_TextLine: PERFECT!
+    m_AudioClip: {fileID: 8300000, guid: ff11d76d13a17d34e92698a9183bda26, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 0
+  - m_NextIndex: 10
+    m_TextLine: That looks way better!
+    m_AudioClip: {fileID: 8300000, guid: 01143005e4d4ac7489ab963745bec47b, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0

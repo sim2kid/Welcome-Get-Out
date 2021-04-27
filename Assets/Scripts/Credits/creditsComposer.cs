@@ -14,10 +14,15 @@ public class creditsComposer : MonoBehaviour
     DialogueTree MeanCredits;
     [SerializeField]
     DialogueTree NiceCredits;
+    [SerializeField]
+    Animator CreditsAnimation;
+
+    bool triggeredAnime;
 
     Persistent data;
     void Start()
     {
+        triggeredAnime = false;
         data = GetComponent<Persistent>();
         data.UpdateScene(SceneManager.GetActiveScene().name);
         if (data.LastScene == "Level-1" || data.LastScene == "Level-0")
@@ -31,6 +36,15 @@ public class creditsComposer : MonoBehaviour
         else 
         {
             narrator.NewNarration(MeanCredits, 0);
+        }
+    }
+
+    private void Update()
+    {
+        if (!triggeredAnime && narrator.atIndex() == 6 && !data.NarratorIsNice) 
+        {
+            triggeredAnime = true;
+            CreditsAnimation.SetTrigger("run");
         }
     }
 
