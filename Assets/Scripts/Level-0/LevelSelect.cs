@@ -7,8 +7,12 @@ public class LevelSelect : MonoBehaviour
     [SerializeField]
     GameObject levels;
 
+    Persistent data;
+
     private void Start()
     {
+        data = Persistent.Get();
+        data.UpdateScene();
         levels.SetActive(false);
     }
 
@@ -19,6 +23,9 @@ public class LevelSelect : MonoBehaviour
 
     public void JumpToLevel(int level) 
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene($"Level-{level}");
+        if(level == -1)
+            UnityEngine.SceneManagement.SceneManager.LoadScene($"Credits");
+        else
+            UnityEngine.SceneManagement.SceneManager.LoadScene($"Level-{level}");
     }
 }

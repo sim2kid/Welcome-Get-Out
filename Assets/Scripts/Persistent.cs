@@ -6,16 +6,21 @@ using UnityEngine.SceneManagement;
 public class Persistent : MonoBehaviour
 {
     private static Persistent s_Instance = null;
+    public bool isOriginal = false;
     public bool NarratorIsNice;
+    [SerializeField]
+    private string m_lastScene;
+    [SerializeField]
+    private string m_currentScene;
     public string LastScene 
     {
-        get;
-        private set;
+        get { return m_lastScene; }
+        private set { m_lastScene = value; }
     }
     public string CurrentScene
     {
-        get;
-        private set;
+        get { return m_currentScene; }
+        private set { m_currentScene = value; }
     }
     public bool GameWasClosed;
 
@@ -36,7 +41,16 @@ public class Persistent : MonoBehaviour
 
     public static Persistent Get() 
     {
-        return (Persistent)Object.FindObjectOfType(typeof(Persistent));
+        Object[] objs = Object.FindObjectsOfType(typeof(Persistent));
+        foreach (Object ob in objs)
+            if (((Persistent)ob).isOriginal) 
+            {
+                return (Persistent)ob;
+            }
+        Persistent newData = new GameObject().AddComponent<Persistent>();
+        newData.name = "Data";
+        newData.isOriginal = true;
+        return newData;
     }
 
     private void Initilize() 
