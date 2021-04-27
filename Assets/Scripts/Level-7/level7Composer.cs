@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(Persistent))]
 public class level7Composer : MonoBehaviour
 {
     [SerializeField]
@@ -11,6 +10,7 @@ public class level7Composer : MonoBehaviour
     [SerializeField]
     CodeChecker check;
 
+    [SerializeField]
     Persistent data;
 
     private int epoch;
@@ -18,7 +18,6 @@ public class level7Composer : MonoBehaviour
 
     void Start()
     {
-        data = GetComponent<Persistent>();
         data.UpdateScene();
         epoch = 0;
         hovered = false;

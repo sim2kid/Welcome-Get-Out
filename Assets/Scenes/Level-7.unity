@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -190,6 +190,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b5cd3353c6c5a4cae20840e6189f09, type: 3}
+--- !u!114 &107636945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 322582959509963049, guid: c1b5cd3353c6c5a4cae20840e6189f09,
+    type: 3}
+  m_PrefabInstance: {fileID: 107636944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf16deaec5285e94285ea47e650c3fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &217537979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,7 +2758,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2077719250}
   - component: {fileID: 2077719249}
-  - component: {fileID: 2077719251}
   m_Layer: 0
   m_Name: SceneComposer
   m_TagString: Untagged
@@ -2768,6 +2779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   narrator: {fileID: 574017316}
   check: {fileID: 1760366174}
+  data: {fileID: 107636945}
 --- !u!4 &2077719250
 Transform:
   m_ObjectHideFlags: 0
@@ -2782,20 +2794,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2077719251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077719248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf16deaec5285e94285ea47e650c3fc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NarratorIsNice: 0
-  GameWasClosed: 0
 --- !u!1 &2120448838
 GameObject:
   m_ObjectHideFlags: 0

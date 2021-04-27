@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(Persistent))]
 public class creditsComposer : MonoBehaviour
 {
+    [SerializeField]
+    Persistent data;
     [SerializeField]
     GameObject backButton;
     [SerializeField]
@@ -21,11 +22,9 @@ public class creditsComposer : MonoBehaviour
 
     bool triggeredAnime;
 
-    Persistent data;
     void Start()
     {
         triggeredAnime = false;
-        data = GetComponent<Persistent>();
         data.UpdateScene();
         mainScreenButton.SetActive(false);
         if (data.LastScene == "Level-1" || data.LastScene == "Level-0")
