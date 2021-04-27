@@ -16,7 +16,7 @@ MonoBehaviour:
   - m_NextIndex: 1
     m_TextLine: Okay I lied before, but you definitely 100 percent beat the game
       this time!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: bdda75a362a83c044a29bdc2a0d69a7f, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -25,7 +25,7 @@ MonoBehaviour:
   - m_NextIndex: 2
     m_TextLine: So just take your win and leave, don't even bother looking at this
       screen!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: fbcc97f1f3bdcae4f9f1deaa133808ba, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -33,7 +33,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 3
     m_TextLine: And definitely DON'T touch any of the code!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 1f473936f3335f14c907da5046e78b05, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -41,7 +41,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 4
     m_TextLine: Do you even know anything about programming?
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: fd7b8981a51f47d4899b1f78d54c723c, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -50,7 +50,7 @@ MonoBehaviour:
   - m_NextIndex: 5
     m_TextLine: "Who am I kidding you\u2019re way to stupid to understand anything
       on this screen"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 83ebad08874e35e40881448b023f3cff, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -58,7 +58,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 6
     m_TextLine: "Let\u2019s be serious for a second here"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 8160a301381f1384eab14ddaf3e0e7c7, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 7
     m_TextLine: "There\u2019s no way an idiot like you is going to figure this out"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 4c62c5690e16b4941aa02d8b6482e2a6, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -75,7 +75,7 @@ MonoBehaviour:
   - m_NextIndex: 8
     m_TextLine: You might as well leave now and go back to whatever menial tasks
       you struggle to get through on a daily basis
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 1268ff2cbe7bb2d4e9836c9246182e10, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_TriggerVar: 0
   - m_NextIndex: 9
     m_TextLine: "Oh! You figured it out... I wasn\u2019t expecting that"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: c2daab754c2d5154bb0749739f6dbe07, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 10
     m_TextLine: "Hmm, maybe you\u2019re smarter than I thought you were..."
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: a62cb3c901246474ab8c9bf10d9d58d3, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -100,7 +100,7 @@ MonoBehaviour:
   - m_NextIndex: 11
     m_TextLine: "What am I saying? It doesn\u2019t matter because you got lucky and
       the chances of you getting the rest are absolutely NOTHING"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 3fcb5cb2f57d0064abee0af237f9beca, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -108,7 +108,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 12
     m_TextLine: Go ahead and quit like the failure I know you are!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: b1050fc8848b0494ebffef4ee6d45792, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -116,7 +116,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 13
     m_TextLine: Wow you got that one too!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: f9b442469f4ae5947976cf7c89e2fad9, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -124,7 +124,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 14
     m_TextLine: "You\u2019re actually pretty good at this"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 9b6b29cda0783a34e940af885536a2e9, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -132,7 +132,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 15
     m_TextLine: Wait what am I saying? What are you doing to me?
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 262dfb6f367173c479c09b0de96651fd, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -140,7 +140,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 16
     m_TextLine: Please stop, you're going to ruin the game!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: a0b3e80dd9261234383ce956fa2a05a4, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 17
     m_TextLine: Congratulations! You solved the final puzzle!
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 9031b9d7fb3670444a2ea2c4e0715d43, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -157,7 +157,7 @@ MonoBehaviour:
   - m_NextIndex: 18
     m_TextLine: "I should apologize for everything I said earlier, it was really
       mean and I didn\u2019t mean to offend you"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: 671e39feab274ba4baf329b7a1d2cfbc, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -165,7 +165,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 19
     m_TextLine: "I knew you would get it, you\u2019re pretty smart"
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: b0ee85b5a79def84a8efaa6a93739837, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
@@ -173,7 +173,7 @@ MonoBehaviour:
     m_TriggerVar: 1
   - m_NextIndex: 20
     m_TextLine: I really enjoyed playing with you and I hope you liked the game
-    m_AudioClip: {fileID: 0}
+    m_AudioClip: {fileID: 8300000, guid: b0695e45d74c9d043ba0a83cdfdf37dd, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []

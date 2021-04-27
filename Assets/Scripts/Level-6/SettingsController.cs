@@ -17,6 +17,7 @@ public class SettingsController : MonoBehaviour
     [SerializeField]
     public bool Open;
     public bool isMusicPlaying;
+    public bool isMusicOver;
     [SerializeField]
     level6SceneComposer sceneComposer;
 
@@ -27,18 +28,20 @@ public class SettingsController : MonoBehaviour
         settingsButton.SetActive(true);
         Open = false;
         isMusicPlaying = false;
+        isMusicOver = false;
     }
 
     private void FixedUpdate()
     {
         settingsMenu.SetActive(Open);
-        if (!isMusicPlaying)
+        if (!isMusicPlaying || isMusicOver)
         {
             musicSetting.isTrue = false;
         }
         else if (!musicSetting.isTrue && isMusicPlaying) 
         {
             sceneComposer.StopMusic();
+            isMusicOver = true;
         }
     }
 

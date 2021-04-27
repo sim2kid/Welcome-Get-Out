@@ -33,6 +33,10 @@ public class SpriteGravity : MonoBehaviour
     public void ToggleGravity(bool toggle) 
     {
         useGravity = toggle;
+        if (!useGravity) 
+        {
+            ResetVelocity();
+        }
     }
     public void ToggleGravity()
     {

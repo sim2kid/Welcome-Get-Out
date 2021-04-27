@@ -6,6 +6,8 @@ using UnityEngine;
 public class ButtonAnimation : Intractable
 {
     private Animator buttonAnimation;
+    [SerializeField]
+    bool lockClosed = false;
     void Start()
     {
         buttonAnimation = GetComponent<Animator>();
@@ -30,7 +32,8 @@ public class ButtonAnimation : Intractable
 
     protected void AnimeUp() 
     {
-        buttonAnimation.SetTrigger("Up");
+        if(!lockClosed)
+            buttonAnimation.SetTrigger("Up");
     }
     protected void AnimeDown()
     {

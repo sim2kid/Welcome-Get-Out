@@ -66,7 +66,8 @@ public class ClickAndDrag : Intractable
     {
         if (isHolding)
         {
-            //Debug.Log($"Distance Travled: {Vector2.Distance(this.startPos, this.transform.position)}m  BlockClick ? {blockClick}");
+            if(!blockClick)
+                m_onDrop.Invoke();
         }
         isHolding = false;
         offset = Vector2.zero;
