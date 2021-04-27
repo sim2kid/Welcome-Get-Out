@@ -27,7 +27,7 @@ public class creditsComposer : MonoBehaviour
         data = Persistent.Get();
         data.UpdateScene();
         mainScreenButton.SetActive(false);
-        if (data.LastScene == "Level-1" || data.LastScene == "Level-0")
+        if (data.LastScene == "Level-0")
             backButton.SetActive(true);
         else
             backButton.SetActive(false);
@@ -61,6 +61,6 @@ public class creditsComposer : MonoBehaviour
 
     public void MenuButton()
     {
-        SceneManager.LoadScene("Level-1");
+        SceneManager.LoadScene("Level-0");
     }
 }
