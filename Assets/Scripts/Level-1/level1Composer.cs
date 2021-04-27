@@ -85,9 +85,12 @@ public class level1Composer : MonoBehaviour
 
     public void OpenCurtains() 
     {
-        CurtainAnimator.SetTrigger("Open");
-        narrator.NewNarration(openSesameDialogue, 0);
-        treeCount++;
+        if (treeCount == 0)
+        {
+            CurtainAnimator.SetTrigger("Open");
+            narrator.NewNarration(openSesameDialogue, 0);
+            treeCount++;
+        }
     }
     public void TouchCurtainDialogue() 
     {
