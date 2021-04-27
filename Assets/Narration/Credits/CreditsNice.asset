@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8ab0689fda849b9e9c010d28872d, type: 3}
+  m_Name: CreditsNice
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - m_NextIndex: 1
+    m_TextLine: '[Announcer] NOW INTRODUCING THE CREDITS!'
+    m_AudioClip: {fileID: 8300000, guid: bcff91045a101234eaf96b77f40767a4, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 2
+    m_TextLine: This is the best screen in the game
+    m_AudioClip: {fileID: 8300000, guid: 427378d7d3ff7ac47b1efbe2918ab508, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 3
+    m_TextLine: Why? Because it lists the names of the amazingly talented people
+      who created this masterpiece
+    m_AudioClip: {fileID: 8300000, guid: 36496f00da4400a4b8318653cdb9d468, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 4
+    m_TextLine: In fact if you should hire all of them immediately
+    m_AudioClip: {fileID: 8300000, guid: e64ef1a5aa4dbcd438178573b7be5af9, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 5
+    m_TextLine: All of these people are super smart, extremely creative, fantastically
+      funny, the most wonderful people you'll ever work with really
+    m_AudioClip: {fileID: 8300000, guid: d6963dc0044b01b41a2654d5c9b9c8c1, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 6
+    m_TextLine: Have you seen this game?
+    m_AudioClip: {fileID: 8300000, guid: 5d1fbe20b54cf2c4db0e0facdbc75800, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 7
+    m_TextLine: The art, the sound design, the programming, the script, THE NARRATOR
+    m_AudioClip: {fileID: 8300000, guid: 8973b7ad4858e6644a11a8726ac7aa1e, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 2
+    m_TriggerVar: 1
+  - m_NextIndex: 8
+    m_TextLine: That's me, look at me, you love me!
+    m_AudioClip: {fileID: 8300000, guid: d3e709fed74431248937058cd8fbed57, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 9
+    m_TextLine: Bottom line, these are the best game developers in the world and
+      they deserve all the praise and awards!
+    m_AudioClip: {fileID: 8300000, guid: 8f6ffd96dbc34a14fba739bf6e5478f0, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 0
+    m_TriggerVar: 0

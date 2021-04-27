@@ -190,6 +190,9 @@ public class NarratorController : MonoBehaviour, INarrator
     {
         narration = dialogue;
         index = startAt;
-        PlayLine();
+        if (!started)
+            Invoke("PlayLine", 1);
+        else
+            PlayLine();
     }
 }
