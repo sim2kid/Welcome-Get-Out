@@ -15,7 +15,11 @@ public class RollController : MonoBehaviour
 
     public RollState rollState;
 
-    private bool midRoll;
+    public bool midRoll
+    {
+        get;
+        private set;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +44,11 @@ public class RollController : MonoBehaviour
 
     public void Roll(int what) 
     {
-        if(!midRoll)
+        if (!midRoll)
+        {
+            midRoll = true;
             StartCoroutine(goRoll(what));
+        }
     }
 
     private IEnumerator goRoll(int what) 
