@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 695577635829038594, guid: 4fdd0058514553e45b55f328340d8379, type: 2}
+  - {fileID: 9070817375825293373, guid: ef5ea4c45bf400647a3a049002ba575b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
     will end up, So here we go yaba daba do. I'll add even more here just to show
     off the cut off at the end!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4fdd0058514553e45b55f328340d8379, type: 2}
-  m_sharedMaterial: {fileID: 695577635829038594, guid: 4fdd0058514553e45b55f328340d8379,
+  m_fontAsset: {fileID: 11400000, guid: ef5ea4c45bf400647a3a049002ba575b, type: 2}
+  m_sharedMaterial: {fileID: 9070817375825293373, guid: ef5ea4c45bf400647a3a049002ba575b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
