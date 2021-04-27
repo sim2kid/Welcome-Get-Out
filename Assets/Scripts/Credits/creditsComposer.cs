@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class creditsComposer : MonoBehaviour
 {
-    [SerializeField]
     Persistent data;
     [SerializeField]
     GameObject backButton;
@@ -25,6 +24,7 @@ public class creditsComposer : MonoBehaviour
     void Start()
     {
         triggeredAnime = false;
+        data = Persistent.Get();
         data.UpdateScene();
         mainScreenButton.SetActive(false);
         if (data.LastScene == "Level-1" || data.LastScene == "Level-0")

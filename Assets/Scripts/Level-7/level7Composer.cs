@@ -10,7 +10,6 @@ public class level7Composer : MonoBehaviour
     [SerializeField]
     CodeChecker check;
 
-    [SerializeField]
     Persistent data;
 
     private int epoch;
@@ -18,6 +17,7 @@ public class level7Composer : MonoBehaviour
 
     void Start()
     {
+        data = Persistent.Get();
         data.UpdateScene();
         epoch = 0;
         hovered = false;

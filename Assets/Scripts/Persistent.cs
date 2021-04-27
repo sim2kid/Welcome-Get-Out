@@ -34,6 +34,11 @@ public class Persistent : MonoBehaviour
         }
     }
 
+    public static Persistent Get() 
+    {
+        return (Persistent)Object.FindObjectOfType(typeof(Persistent));
+    }
+
     private void Initilize() 
     {
         NarratorIsNice = false;
