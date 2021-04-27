@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(Persistent))]
 public class level7Composer : MonoBehaviour
 {
     [SerializeField]
@@ -9,11 +11,15 @@ public class level7Composer : MonoBehaviour
     [SerializeField]
     CodeChecker check;
 
+    Persistent data;
+
     private int epoch;
     private bool hovered;
 
     void Start()
     {
+        data = GetComponent<Persistent>();
+        data.UpdateScene();
         epoch = 0;
         hovered = false;
     }
@@ -44,6 +50,7 @@ public class level7Composer : MonoBehaviour
         {
             epoch++;
             narrator.JumpToLine(16);
+            data.NarratorIsNice = true;
         }
         if (epoch == 3 && narrator.IsOver() && !narrator.IsTalking()) 
         {
@@ -53,7 +60,7 @@ public class level7Composer : MonoBehaviour
 
     private void Win() 
     {
-        Debug.Log("Win");
+        SceneManager.LoadScene("Credits");
     }
 
 }

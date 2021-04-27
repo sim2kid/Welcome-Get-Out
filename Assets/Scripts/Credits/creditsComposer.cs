@@ -26,7 +26,7 @@ public class creditsComposer : MonoBehaviour
     {
         triggeredAnime = false;
         data = GetComponent<Persistent>();
-        data.UpdateScene(SceneManager.GetActiveScene().name);
+        data.UpdateScene();
         mainScreenButton.SetActive(false);
         if (data.LastScene == "Level-1" || data.LastScene == "Level-0")
             backButton.SetActive(true);

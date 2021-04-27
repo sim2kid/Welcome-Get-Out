@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Persistent : MonoBehaviour
 {
@@ -42,8 +43,9 @@ public class Persistent : MonoBehaviour
         GameWasClosed = false;
     }
 
-    public void UpdateScene(string sceneName) 
+    public void UpdateScene() 
     {
+        string sceneName = SceneManager.GetActiveScene().name;
         if (CurrentScene != sceneName)
         {
             LastScene = CurrentScene;
