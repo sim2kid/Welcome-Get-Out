@@ -35,7 +35,7 @@ public class Persistent : MonoBehaviour
 
     private void Initilize() 
     {
-        //NarratorIsNice = false;
+        NarratorIsNice = false;
         CurrentScene = "";
         LastScene = "";
         // Actually need to check for this!!

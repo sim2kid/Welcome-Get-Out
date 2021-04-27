@@ -9,6 +9,8 @@ public class creditsComposer : MonoBehaviour
     [SerializeField]
     GameObject backButton;
     [SerializeField]
+    GameObject mainScreenButton;
+    [SerializeField]
     NarratorController narrator;
     [SerializeField]
     DialogueTree MeanCredits;
@@ -25,6 +27,7 @@ public class creditsComposer : MonoBehaviour
         triggeredAnime = false;
         data = GetComponent<Persistent>();
         data.UpdateScene(SceneManager.GetActiveScene().name);
+        mainScreenButton.SetActive(false);
         if (data.LastScene == "Level-1" || data.LastScene == "Level-0")
             backButton.SetActive(true);
         else
@@ -46,10 +49,19 @@ public class creditsComposer : MonoBehaviour
             triggeredAnime = true;
             CreditsAnimation.SetTrigger("run");
         }
+        if (!mainScreenButton.activeSelf && narrator.IsOver() && !narrator.IsTalking()) 
+        {
+            mainScreenButton.SetActive(true);
+        }
     }
 
     public void BackButton() 
     {
         SceneManager.LoadScene(data.LastScene);
+    }
+
+    public void MenuButton()
+    {
+        SceneManager.LoadScene("Level-1");
     }
 }
