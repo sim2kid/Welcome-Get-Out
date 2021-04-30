@@ -26,7 +26,7 @@ Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 
 
 **Voice Actor (The Narrator)**<br>
-Holly Buchaniec ([Website](https://johnbuchaniechoard.com/))
+John Buchaniec ([Website](https://johnbuchaniechoard.com/))
 
 
 **Sound Effects**<br>
