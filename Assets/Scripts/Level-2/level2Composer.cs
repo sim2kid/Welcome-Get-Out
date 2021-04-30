@@ -32,6 +32,14 @@ public class level2Composer : MonoBehaviour
     [SerializeField]
     private Animator chest;
 
+    [SerializeField]
+    private AudioClip glassTapSFX;
+    [SerializeField]
+    private AudioClip glassBreakSFX;
+    [SerializeField]
+    private AudioClip rebButtonSFX;
+    [SerializeField]
+    private AudioController audioController;
 
     [SerializeField]
     private RockPaperScissors rps;
@@ -53,10 +61,12 @@ public class level2Composer : MonoBehaviour
             if(stage == 0)
                 narrator.NewNarration(dt_rock, 0);
             glass.SetTrigger("Hit");
+            audioController.PlaySound(glassTapSFX);
             stage++;
         }
         if (stage == 3)
         {
+            audioController.PlaySound(glassBreakSFX);
             narrator.Trigger();
             rock.GetComponent<DragConstraints>().x = false;
             rock.GetComponent<DragConstraints>().y = false;
@@ -64,6 +74,7 @@ public class level2Composer : MonoBehaviour
             scissors.GetComponent<DragConstraints>().y = false;
             paper.GetComponent<DragConstraints>().x = false;
             paper.GetComponent<DragConstraints>().y = false;
+            stage++;
         }
     }
 
@@ -115,6 +126,7 @@ public class level2Composer : MonoBehaviour
     {
         if (rps.canCheat)
         {
+            audioController.PlaySound(rebButtonSFX);
             rps.canCheat = false;
             narrator.NewNarration(dt_RedButton, 0);
         }
