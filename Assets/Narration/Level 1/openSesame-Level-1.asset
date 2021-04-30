@@ -22,26 +22,26 @@ MonoBehaviour:
     m_Trigger: 2
     m_TriggerVar: 0
   - m_NextIndex: 2
-    m_TextLine: "[Announcer] Hello! And Welcome to \u2018GAME\u2019!"
-    m_AudioClip: {fileID: 8300000, guid: 0d184abfefe1387448090b4f868ab449, type: 3}
+    m_TextLine: "[Announcer] Now presenting\u2026 Welcome! Get Out!"
+    m_AudioClip: {fileID: 8300000, guid: eccf4069e658427469a71ce756b4dd2f, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
     m_Trigger: 2
     m_TriggerVar: 0
   - m_NextIndex: 3
-    m_TextLine: I always hated that guy. Well now that you know this is here, wElCoMe
-      tO gAmE. Ugg.
-    m_AudioClip: {fileID: 8300000, guid: 146100428e678f34c823c94334b04d4c, type: 3}
+    m_TextLine: I always hated that guy. Well now that you know this is here, Welcome!
+      Now get out!
+    m_AudioClip: {fileID: 8300000, guid: 2cffa7cfd0d15874db1555198b5e5963, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
     m_Trigger: 2
     m_TriggerVar: 3
   - m_NextIndex: 4
-    m_TextLine: "I now have to present you with a series of \u2018puzzles\u2019 for
-      some dang reason."
-    m_AudioClip: {fileID: 8300000, guid: 3183465ea69834b41b424e9a91ef1a59, type: 3}
+    m_TextLine: "No? Ugh fine, I now have to present you with a series of \u2018puzzles\u2019
+      for some dang reason."
+    m_AudioClip: {fileID: 8300000, guid: 706949655b8d3cb458883f10064c612b, type: 3}
     m_RunWhenTriggered:
       m_PersistentCalls:
         m_Calls: []
