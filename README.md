@@ -13,24 +13,28 @@ See the project [Wiki](https://github.com/sim2kid/GAME/wiki) for more info!
 
 
 # Team Member
+Here are our Team Members as well as where you can find their other works!<br>
+This project was made as a Capstone at Columbia College Chicago.<br>
+
+
 **Team Leader/Designer/Artist**<br>
-Mingshen Wu (Columbia College Chicago) ([Website](https://mingshenwu.myportfolio.com/))
+Mingshen Wu ([Website](https://mingshenwu.myportfolio.com/))
 
 
 **Scrum Master/Programmer/Designer**<br>
-Owen Ravelo (Columbia College Chicago) ([Website](https://simmgames.com))
+Owen Ravelo ([Website](https://simmgames.com))
 
 
 **Designer/Screenwriter**<br>
-Perri Bentley (Columbia College Chicago) ([Website](https://perribentley.myportfolio.com/))
+Perri Bentley ([Website](https://perribentley.myportfolio.com/))
 
 
 **Voice Actor (The Narrator)**<br>
-John Buchaniec (Columbia College Chicago) ([Website](https://johnbuchaniechoard.com/))
+John Buchaniec ([Website](https://johnbuchaniechoard.com/))
 
 
 **Sound Effects**<br>
-William Bacchus (Columbia College Chicago)
+William Bacchus
 
 
 **Artist**<br>
