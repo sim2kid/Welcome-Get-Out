@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(AudioSource))]
 public class Level3Composser : MonoBehaviour
 {
     [SerializeField]
@@ -16,12 +17,25 @@ public class Level3Composser : MonoBehaviour
     [SerializeField]
     Sprite[] rocks;
     [SerializeField]
+    AudioClip[] rockSounds;
+    [SerializeField]
     GameObject fire, lightning, ice, button, rock;
     [SerializeField]
     Sprite[] icey;
+    [SerializeField]
+    AudioController sfxController;
+    [SerializeField]
+    AudioClip lightningSfx;
+    [SerializeField]
+    AudioClip iceSfx;
+    [SerializeField]
+    AudioClip fireSfx;
 
     Animator rockAni;
     SpriteRenderer rockSprite;
+    AudioController rockSound;
+
+    AudioSource audioSource;
 
     private int iceCount = 0;
     private int fireCount = 0;
@@ -36,9 +50,15 @@ public class Level3Composser : MonoBehaviour
             epoch = 0;
             startAt = 0;
         }
+        audioSource = GetComponent<AudioSource>();
         rockAni = rock.GetComponent<Animator>();
         rockSprite = rock.GetComponent<SpriteRenderer>();
+        rockSound = rock.GetComponent<AudioController>();
+        audioSource.clip = fireSfx;
+        audioSource.loop = true;
+        audioSource.Stop();
         rockSprite.sprite = rocks[0];
+        rockSound.sfxClip = rockSounds[0];
         fireSize = fire.transform.localScale.x;
         fireCount = 10;
         iceCount = icey.Length;
@@ -59,19 +79,24 @@ public class Level3Composser : MonoBehaviour
             case 11:
                 //Change to soccerball
                 rockSprite.sprite = rocks[1];
+                rockSound.sfxClip = rockSounds[1];
                 break;
             case 14:
                 //change to bouncy ball
                 rockSprite.sprite = rocks[2];
+                rockSound.sfxClip = rockSounds[2];
                 break;
             case 16:
                 //Lightning and fire! ON!
+                sfxController.PlaySound(lightningSfx);
+                audioSource.Play();
                 fire.SetActive(true);
                 lightning.SetActive(true);
                 Invoke("turnOffLightning", 1f);
                 break;
             case 18:
                 fire.SetActive(false);
+                audioSource.Stop();
                 narrator.JumpToLine(32);
                 TriggerEpoch();
                 break;
@@ -174,8 +199,13 @@ public class Level3Composser : MonoBehaviour
 
     private void melt() 
     {
+        if(iceCount != 0)
+        {
+            sfxController.PlaySound(iceSfx);
+        }
         iceCount--;
-        if (iceCount == 0) {
+        if (iceCount == 0)
+        {
             narrator.Trigger(epochTrigger);
             return;
         }
