@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -229,8 +229,20 @@ MonoBehaviour:
   useGravity: 1
   onGroundHit:
     m_PersistentCalls:
-      m_Calls: []
-  hitTollarance: 1
+      m_Calls:
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 161195fac53a7aa4ab01b7412faa3994,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hitTollarance: 2
 --- !u!114 &217537981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,6 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d30c760e904bfb41b8ecb9a6f53982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxClip: {fileID: 0}
 --- !u!82 &574017318
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1042,17 +1055,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1255698817}
-        m_MethodName: ToggleGravity
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1255698817}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -1063,20 +1065,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onUnCouple:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1255698817}
-        m_MethodName: ToggleGravity
-        m_Mode: 6
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: d51c48d2f7a5661419829818cc48ea48,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
+  onUnCouple:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 1255698817}
         m_MethodName: set_enabled
         m_Mode: 6
@@ -1143,8 +1146,20 @@ MonoBehaviour:
   useGravity: 1
   onGroundHit:
     m_PersistentCalls:
-      m_Calls: []
-  hitTollarance: 1
+      m_Calls:
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 161195fac53a7aa4ab01b7412faa3994,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hitTollarance: 2
 --- !u!212 &1120479041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1379,6 +1394,7 @@ GameObject:
   - component: {fileID: 1188978449}
   - component: {fileID: 1188978450}
   - component: {fileID: 1188978451}
+  - component: {fileID: 1188978452}
   m_Layer: 9
   m_Name: glass
   m_TagString: Untagged
@@ -1463,6 +1479,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25.513956, y: 20.554497, z: 0.2}
   m_Center: {x: 0.119889125, y: -0.16530755, z: 0}
+--- !u!114 &1188978452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188978448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cdd6515e136d0498f27856c9245ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 00127538b038f1e4eb2ea8e527c991ce,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onUnclick:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onFullClick:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onLeave:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1255698813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,8 +1664,20 @@ MonoBehaviour:
   useGravity: 1
   onGroundHit:
     m_PersistentCalls:
-      m_Calls: []
-  hitTollarance: 1
+      m_Calls:
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 161195fac53a7aa4ab01b7412faa3994,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hitTollarance: 2
 --- !u!212 &1255698818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1904,6 +1971,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1542790121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7604155181516823077, guid: c1b5cd3353c6c5a4cae20840e6189f09,
+    type: 3}
+  m_PrefabInstance: {fileID: 107636944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d30c760e904bfb41b8ecb9a6f53982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1580408394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2120,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 217537980}
-        m_MethodName: ToggleGravity
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2051,11 +2130,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d51c48d2f7a5661419829818cc48ea48,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnCouple:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 217537980}
-        m_MethodName: ToggleGravity
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2421,7 +2512,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120479040}
-        m_MethodName: ToggleGravity
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2431,11 +2522,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1542790121}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: d51c48d2f7a5661419829818cc48ea48,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUnCouple:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120479040}
-        m_MethodName: ToggleGravity
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
