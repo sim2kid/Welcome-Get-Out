@@ -45,7 +45,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     m_Trigger: 4
-    m_TriggerVar: 16
+    m_TriggerVar: 7
   - m_NextIndex: 5
     m_TextLine: "You\u2019re still here? What, you want a medal or something?"
     m_AudioClip: {fileID: 8300000, guid: 1b38951092d31504197a9b3e6d7992c3, type: 3}
@@ -53,7 +53,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     m_Trigger: 4
-    m_TriggerVar: 6
+    m_TriggerVar: 3
   - m_NextIndex: 6
     m_TextLine: Fine, since you want to stick around we can listen to my favourite
       song
@@ -62,7 +62,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     m_Trigger: 4
-    m_TriggerVar: 3
+    m_TriggerVar: 2
   - m_NextIndex: 7
     m_TextLine: Get ready to have your ears blessed
     m_AudioClip: {fileID: 8300000, guid: 714cc22cb9dbd3649adfd5c455145894, type: 3}
