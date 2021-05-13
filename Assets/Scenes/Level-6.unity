@@ -542,7 +542,7 @@ MonoBehaviour:
         m_MethodName: PlaySound
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 43c838377449fe9479ce88457d1549c1,
+          m_ObjectArgument: {fileID: 8300000, guid: cce7dc8818e78e2499198a641690868a,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
@@ -653,7 +653,7 @@ MonoBehaviour:
   sudoFloor: -8.07
   useSudoFloor: 1
   speed: 30
-  bounce: 0.2
+  bounce: 0
   useGravity: 1
   onGroundHit:
     m_PersistentCalls:
@@ -670,7 +670,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  hitTollarance: 2
+  hitTollarance: 3
 --- !u!1 &226245586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   gearCouple: {fileID: 1398480668}
   door: {fileID: 1356264139}
   train: {fileID: 689080200}
-  song: {fileID: 8300000, guid: 593c8a326fa0117448ba7ab4d6701425, type: 3}
+  song: {fileID: 8300000, guid: abeae65f4f73d3b449010b71a327d472, type: 3}
   approchedMusic: 0
 --- !u!4 &459188606
 Transform:
@@ -2700,7 +2700,7 @@ MonoBehaviour:
         m_MethodName: PlaySound
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 43c838377449fe9479ce88457d1549c1,
+          m_ObjectArgument: {fileID: 8300000, guid: cce7dc8818e78e2499198a641690868a,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
@@ -2833,7 +2833,7 @@ MonoBehaviour:
   sudoFloor: -8.43
   useSudoFloor: 1
   speed: 30
-  bounce: 0.2
+  bounce: 0
   useGravity: 0
   onGroundHit:
     m_PersistentCalls:
@@ -2850,7 +2850,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  hitTollarance: 2
+  hitTollarance: 3
 --- !u!1 &761005259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +3488,7 @@ MonoBehaviour:
         m_MethodName: PlaySound
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 8c9620cbadd491d49965d3d8cfe45972,
+          m_ObjectArgument: {fileID: 8300000, guid: f88ce5cfec5576e4686fa27590456020,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
@@ -3599,7 +3599,7 @@ MonoBehaviour:
   sudoFloor: -7.68
   useSudoFloor: 1
   speed: 30
-  bounce: 0.212
+  bounce: 0
   useGravity: 1
   onGroundHit:
     m_PersistentCalls:
@@ -3608,7 +3608,7 @@ MonoBehaviour:
         m_MethodName: PlaySound
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 8c9620cbadd491d49965d3d8cfe45972,
+          m_ObjectArgument: {fileID: 8300000, guid: e2af0c2c04f208a4b98db14e4d24b662,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
@@ -4708,7 +4708,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1b12ceaf028db434f944b1fae1b9be0f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ecbecbfd2fdcd8947ada1504c8874d67, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
