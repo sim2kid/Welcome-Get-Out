@@ -1733,7 +1733,7 @@ MonoBehaviour:
   dt_button: {fileID: 11400000, guid: 22eb7daf288ca6c4c8ab1f1e76771b5b, type: 2}
   dt_RedButton: {fileID: 11400000, guid: 6bf660caf8c758e43a07d0e409125844, type: 2}
   chest: {fileID: 1525784625}
-  glassTapSFX: {fileID: 8300000, guid: 902d18c931761b74b9a8ee7472e735b4, type: 3}
+  glassTapSFX: {fileID: 8300000, guid: 8d4e54d0d8bcd2e43bf418a0abe47c6b, type: 3}
   glassBreakSFX: {fileID: 8300000, guid: 902d18c931761b74b9a8ee7472e735b4, type: 3}
   rebButtonSFX: {fileID: 8300000, guid: 87ecea736c077564d9d487315f94176e, type: 3}
   audioController: {fileID: 1941841229}
@@ -1813,6 +1813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d30c760e904bfb41b8ecb9a6f53982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxClip: {fileID: 0}
 --- !u!82 &608394245
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3440,7 +3441,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  rollingSFX: {fileID: 8300000, guid: 3ae4a8a3e2613d242b9ea8c133dd4023, type: 3}
+  rollingSFX: {fileID: 8300000, guid: c9e36ca72ad245e4599df22980d52a65, type: 3}
   audioController: {fileID: 1941841229}
   canCheat: 0
 --- !u!4 &1393209290
