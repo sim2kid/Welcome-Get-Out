@@ -1,4 +1,4 @@
-![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/Logo.png)
+![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/stageIconFull.png)
 
 
 # Welcome, Get Out!
