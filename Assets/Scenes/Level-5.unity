@@ -512,7 +512,16 @@ MonoBehaviour:
   minute: {fileID: 1595358662}
   hour: {fileID: 2041182742}
   handSfx:
-  - {fileID: 8300000, guid: d51c48d2f7a5661419829818cc48ea48, type: 3}
+  - {fileID: 8300000, guid: fb07128ae41c9384895796c29c54255c, type: 3}
+  - {fileID: 8300000, guid: 6717398e58772f54daf1602a60423c55, type: 3}
+  - {fileID: 8300000, guid: f1471ce18f9a8f04a83cd280b574f5a8, type: 3}
+  - {fileID: 8300000, guid: 42f081dd00f405f4f94aaa8622a00fc7, type: 3}
+  - {fileID: 8300000, guid: 68b19f4a68cf67a4298339d8f88501c9, type: 3}
+  - {fileID: 8300000, guid: 06cf83b95b8f4514facd30e325430ab5, type: 3}
+  - {fileID: 8300000, guid: 47bab502aeecb5b4893fa8d77f88058c, type: 3}
+  - {fileID: 8300000, guid: 8c5b3c737d811e94d94675b06c00ccf7, type: 3}
+  - {fileID: 8300000, guid: f17cde12237933b4dbe5a245da00ccb6, type: 3}
+  - {fileID: 8300000, guid: b593ff141279b4346a6cbdaac0c42053, type: 3}
   sfxController: {fileID: 1442615179}
 --- !u!212 &1142597006
 SpriteRenderer:
@@ -875,7 +884,7 @@ MonoBehaviour:
   clock: {fileID: 1142597005}
   narrator: {fileID: 1960279869}
   sfx: {fileID: 1442615179}
-  winSfx: {fileID: 8300000, guid: 161195fac53a7aa4ab01b7412faa3994, type: 3}
+  winSfx: {fileID: 8300000, guid: 5f4ee447b3a158e4d99fd87c544c4b3c, type: 3}
   Epoch: 0
 --- !u!4 &1616755371
 Transform:
