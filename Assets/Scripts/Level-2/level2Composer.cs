@@ -61,8 +61,10 @@ public class level2Composer : MonoBehaviour
             if(stage == 0)
                 narrator.NewNarration(dt_rock, 0);
             glass.SetTrigger("Hit");
-            audioController.PlaySound(glassTapSFX);
             stage++;
+            if(stage != 3)
+                audioController.PlaySound(glassTapSFX);
+            
         }
         if (stage == 3)
         {
