@@ -1574,8 +1574,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ffcd746a2a57ca041b7aabfb13d29b2c, type: 3}
   rockSounds:
   - {fileID: 8300000, guid: 2c7dca3d7d4f91e4c93cc3e42a1d2ddd, type: 3}
-  - {fileID: 8300000, guid: a8d5010d1203c2a4bb25588befe5180b, type: 3}
-  - {fileID: 8300000, guid: a2c7b215373dca84798b12696af8b3ea, type: 3}
+  - {fileID: 8300000, guid: 2de212a2cb2a73f4996226426676c1c8, type: 3}
+  - {fileID: 8300000, guid: c9e3c326083640b4cb166a88bbac8988, type: 3}
   fire: {fileID: 1266327059}
   lightning: {fileID: 676445091}
   ice: {fileID: 1014474943}
@@ -1588,9 +1588,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 64831f6c30c0e9f4ba5df9a751e7f2d6, type: 3}
   - {fileID: 21300000, guid: 01f5e47f0d357d14c8df69bf0074f671, type: 3}
   sfxController: {fileID: 774199175}
-  lightningSfx: {fileID: 8300000, guid: 161195fac53a7aa4ab01b7412faa3994, type: 3}
-  iceSfx: {fileID: 8300000, guid: 902d18c931761b74b9a8ee7472e735b4, type: 3}
-  fireSfx: {fileID: 8300000, guid: 3ae4a8a3e2613d242b9ea8c133dd4023, type: 3}
+  lightningSfx: {fileID: 8300000, guid: 718ca230b19a2e249a7dcb2df25f6968, type: 3}
+  iceSfx: {fileID: 8300000, guid: 5cf45d07cd98310439336abf2ff05bdf, type: 3}
+  fireSfx: {fileID: 8300000, guid: df113881c653405459084b7b29c309e7, type: 3}
 --- !u!4 &1438809152
 Transform:
   m_ObjectHideFlags: 0
