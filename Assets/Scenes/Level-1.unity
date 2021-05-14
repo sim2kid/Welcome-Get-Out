@@ -3151,6 +3151,7 @@ MonoBehaviour:
   openSesameDialogue: {fileID: 11400000, guid: f7000ebd8ae2781458580074a4049e4a, type: 2}
   menu: {fileID: 11400000, guid: 22eb12fa7dcd1c24eb98ed31910869f6, type: 2}
   rat: {fileID: 11400000, guid: 3289dd2de81649f41813884905a4a387, type: 2}
+  ohItsYou: {fileID: 0}
   ratamation: {fileID: 962815264}
   exitButton: {fileID: 178967853}
   exitAlt: {fileID: 273438393}
