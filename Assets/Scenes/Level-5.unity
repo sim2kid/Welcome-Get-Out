@@ -511,6 +511,18 @@ MonoBehaviour:
   second: {fileID: 1175376021}
   minute: {fileID: 1595358662}
   hour: {fileID: 2041182742}
+  handSfx:
+  - {fileID: 8300000, guid: fb07128ae41c9384895796c29c54255c, type: 3}
+  - {fileID: 8300000, guid: 6717398e58772f54daf1602a60423c55, type: 3}
+  - {fileID: 8300000, guid: f1471ce18f9a8f04a83cd280b574f5a8, type: 3}
+  - {fileID: 8300000, guid: 42f081dd00f405f4f94aaa8622a00fc7, type: 3}
+  - {fileID: 8300000, guid: 68b19f4a68cf67a4298339d8f88501c9, type: 3}
+  - {fileID: 8300000, guid: 06cf83b95b8f4514facd30e325430ab5, type: 3}
+  - {fileID: 8300000, guid: 47bab502aeecb5b4893fa8d77f88058c, type: 3}
+  - {fileID: 8300000, guid: 8c5b3c737d811e94d94675b06c00ccf7, type: 3}
+  - {fileID: 8300000, guid: f17cde12237933b4dbe5a245da00ccb6, type: 3}
+  - {fileID: 8300000, guid: b593ff141279b4346a6cbdaac0c42053, type: 3}
+  sfxController: {fileID: 1442615179}
 --- !u!212 &1142597006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -746,6 +758,18 @@ Transform:
   m_Father: {fileID: 1142597007}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 126}
+--- !u!114 &1442615179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7604155181516823077, guid: c1b5cd3353c6c5a4cae20840e6189f09,
+    type: 3}
+  m_PrefabInstance: {fileID: 2010706050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d30c760e904bfb41b8ecb9a6f53982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1595358662
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +883,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 1142597005}
   narrator: {fileID: 1960279869}
+  sfx: {fileID: 1442615179}
+  winSfx: {fileID: 8300000, guid: 5f4ee447b3a158e4d99fd87c544c4b3c, type: 3}
   Epoch: 0
 --- !u!4 &1616755371
 Transform:
@@ -1016,6 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d30c760e904bfb41b8ecb9a6f53982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxClip: {fileID: 0}
 --- !u!82 &1960279871
 AudioSource:
   m_ObjectHideFlags: 0

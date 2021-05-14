@@ -14,7 +14,13 @@ public class ClockController : MonoBehaviour
     [SerializeField]
     GameObject second, minute, hour;
 
-    float minTime, secTime, hourTime, amPM;
+    [SerializeField]
+    AudioClip[] handSfx;
+
+    [SerializeField]
+    AudioController sfxController;
+
+    float lastSec, minTime, secTime, hourTime, amPM;
 
     public int mTime
     {
@@ -79,6 +85,7 @@ public class ClockController : MonoBehaviour
     public void SetTime(float hou, float min, float sec) 
     {
         secTime = sec;
+        lastSec = secTime;
         minTime = min;
         amPM = 0;
         if (hourTime > 12) 
@@ -89,13 +96,28 @@ public class ClockController : MonoBehaviour
         hourTime = hou;
     }
 
+    private AudioClip ticTok() 
+    {
+        return handSfx[Random.Range(0, handSfx.Length)];
+    }
+
     private void FixedUpdate()
     {
         secTime += Time.fixedDeltaTime * modifier;
+        if (lastSec + 1 < secTime) 
+        {
+            sfxController.PlaySound(ticTok());
+            lastSec++;
+        }
         if (secTime >= 60) {
             secTime -= 60;
-            if(!minPause)
+            lastSec -= 60;
+            sfxController.PlaySound(ticTok());
+            if (!minPause)
+            {
                 minTime++;
+                sfxController.PlaySound(ticTok());
+            }
         }
 
         if (minTime >= 60) {
@@ -128,7 +150,7 @@ public class ClockController : MonoBehaviour
             amPM = 1;
         }
 
-        setRotation(second, minuteToRotation(secTime));
+        setRotation(second, minuteToRotation(Mathf.Floor(secTime)));
         setRotation(minute, minuteToRotation(minTime));
         setRotation(hour, hourToRotation(hourTime, minTime));
 

@@ -115,14 +115,17 @@ public class level1Composer : MonoBehaviour
     }
     public void TouchCurtainDialogue() 
     {
-        if (touchCount == 0) 
+        if (treeCount == 0)
         {
-            narrator.NewNarration(curtainDialogue, 0);
+            if (touchCount == 0)
+            {
+                narrator.NewNarration(curtainDialogue, 0);
+            }
+            else
+            {
+                narrator.Trigger();
+            }
+            touchCount++;
         }
-        else 
-        {
-            narrator.Trigger();
-        }
-        touchCount++;
     }
 }

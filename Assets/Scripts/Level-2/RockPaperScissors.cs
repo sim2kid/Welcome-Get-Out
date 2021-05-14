@@ -15,6 +15,11 @@ public class RockPaperScissors : MonoBehaviour
     [SerializeField]
     private UnityEvent Win;
 
+    [SerializeField]
+    private AudioClip rollingSFX;
+    [SerializeField]
+    private AudioController audioController;
+
     public bool canCheat;
     private bool listenForRoll;
 
@@ -41,6 +46,7 @@ public class RockPaperScissors : MonoBehaviour
     {
         if (!player.midRoll)
         {
+            audioController.PlaySound(rollingSFX);
             player.Roll(what);
             if (canCheat)
             {
