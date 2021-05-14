@@ -46,18 +46,24 @@ public class Coupling : MonoBehaviour
 
     public void Couple() 
     {
-        isCoupled = true;
-        toBindto.transform.parent = this.transform;
-        toBindto.transform.localPosition = Vector3.zero;
-        toBindto.transform.localRotation = new Quaternion();
-        onCouple.Invoke();
+        if (!isCoupled)
+        {
+            isCoupled = true;
+            toBindto.transform.parent = this.transform;
+            toBindto.transform.localPosition = Vector3.zero;
+            toBindto.transform.localRotation = new Quaternion();
+            onCouple.Invoke();
+        }
     }
     public void UnCouple()
     {
-        isCoupled = false;
-        toBindto.transform.parent = this.transform.parent;
-        toBindto.transform.position = new Vector3(toBindto.transform.position.x,
-            toBindto.transform.position.y, transform.position.z + uncoupleOffset);
-        onUnCouple.Invoke();
+        if (isCoupled)
+        {
+            isCoupled = false;
+            toBindto.transform.parent = this.transform.parent;
+            toBindto.transform.position = new Vector3(toBindto.transform.position.x,
+                toBindto.transform.position.y, transform.position.z + uncoupleOffset);
+            onUnCouple.Invoke();
+        }
     }
 }

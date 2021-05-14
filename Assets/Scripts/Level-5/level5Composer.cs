@@ -9,6 +9,11 @@ public class level5Composer : MonoBehaviour
     [SerializeField]
     NarratorController narrator;
     [SerializeField]
+    AudioController sfx;
+    [SerializeField]
+    AudioClip winSfx;
+
+    [SerializeField]
     private int Epoch;
 
     // Start is called before the first frame update
@@ -42,6 +47,7 @@ public class level5Composer : MonoBehaviour
         }
         if (isCorrect() && Epoch != 3) 
         {
+            sfx.PlaySound(winSfx);
             Epoch = 3;
             narrator.JumpToLine(19);
         }

@@ -57,7 +57,6 @@ public class TimeSetter : Intractable
         }
 
         clock.ModifyMinute(newAngle / 6);
-        //Debug.Log(newAngle);
 
     }
 
@@ -82,7 +81,6 @@ public class TimeSetter : Intractable
         Vector2 normPos = fixedLocation.normalized;
         float x = Mathf.Acos(normPos.x);
         float y = Mathf.Asin(normPos.y);
-        //Debug.Log($"({normPos.x}, {normPos.y}) ({x / Mathf.PI}PI, {y / Mathf.PI}PI)"); //x iso our rotaiton halfs.
         if (y >= 0)
         {
             return x;
