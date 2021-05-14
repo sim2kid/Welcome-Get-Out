@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -512,7 +512,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_onClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1345286894}
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: edad3160a82596c47a90d19d1fbabbdf,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onUnclick:
     m_PersistentCalls:
       m_Calls: []
@@ -1725,6 +1737,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6208573688569900382, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: m_onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1345286894}
     - target: {fileID: 6208573688839587940, guid: 2528bfb6dd02b64418da08764f2bfe55,
         type: 3}
       propertyPath: m_IsActive
@@ -1745,6 +1762,36 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 10.88
       objectReference: {fileID: 0}
+    - target: {fileID: 6208573689133261188, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: m_onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1345286894}
+    - target: {fileID: 6208573689463834874, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: m_onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1345286894}
+    - target: {fileID: 6208573689714075410, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: m_onFullClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208573689714075410, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: m_onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1345286894}
+    - target: {fileID: 6208573689714075420, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: isTrue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208573689721011400, guid: 2528bfb6dd02b64418da08764f2bfe55,
+        type: 3}
+      propertyPath: m_onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1345286894}
     - target: {fileID: 8752017733659354990, guid: 2528bfb6dd02b64418da08764f2bfe55,
         type: 3}
       propertyPath: m_Name
