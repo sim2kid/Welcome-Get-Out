@@ -14,6 +14,9 @@ public class MouseManager : MonoBehaviour
     private ClickType m_Click;
     private GameObject lastHit;
 
+    [SerializeField]
+    private Transform topRight;
+
     public Vector2 MouseLocation => 
         Camera.main.ScreenToWorldPoint(m_LocationAction.ReadValue<Vector2>());
     public ClickType Click => m_Click;
@@ -36,7 +39,13 @@ public class MouseManager : MonoBehaviour
             m_HoldAction = m_PlayerInput.actions["Hold"];
         }
 
+        Vector2 lowerLimits = Vector2.zero;
+        Vector2 upperLimits = Camera.main.WorldToScreenPoint(topRight.position);
+
         Vector2 screenLocation = m_LocationAction.ReadValue<Vector2>();
+        screenLocation.x = Mathf.Clamp(screenLocation.x, lowerLimits.x, upperLimits.x);
+        screenLocation.y = Mathf.Clamp(screenLocation.y, lowerLimits.y, upperLimits.y);
+
         var hold = m_HoldAction.ReadValue<float>();
 
         if (m_Click == ClickType.Unclick)
