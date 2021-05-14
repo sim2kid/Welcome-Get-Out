@@ -328,7 +328,7 @@ public class Level3Composser : MonoBehaviour
                 {
                     progressBar.modifyProgress(-1);
                     narrator.Trigger(epochTrigger);
-                    if(narrator.atIndex() != 25)
+                    if(narrator.atIndex() != 25 || narrator.IsTalking())
                         rockFall();
                 }
                 break;
@@ -344,6 +344,6 @@ public class Level3Composser : MonoBehaviour
                     TriggerEpoch();
                 break;
         }
-        
+        startAt = narrator.atIndex();
     }
 }
