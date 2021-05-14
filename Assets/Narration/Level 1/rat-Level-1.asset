@@ -56,3 +56,20 @@ MonoBehaviour:
         m_Calls: []
     m_Trigger: 0
     m_TriggerVar: 0
+  - m_NextIndex: 6
+    m_TextLine: "Oh great. You\u2019re back."
+    m_AudioClip: {fileID: 8300000, guid: 042dac945f6352d43a30ace2a42b7aa4, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 1
+  - m_NextIndex: 2
+    m_TextLine: "There\u2019s still nothing here for you, so you might as well leave
+      again."
+    m_AudioClip: {fileID: 8300000, guid: ade7f4933d8c3774c99fb8d2416ed25f, type: 3}
+    m_RunWhenTriggered:
+      m_PersistentCalls:
+        m_Calls: []
+    m_Trigger: 4
+    m_TriggerVar: 5

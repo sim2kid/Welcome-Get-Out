@@ -1,4 +1,4 @@
-![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/Logo.png)
+![GAME logo](https://raw.githubusercontent.com/sim2kid/GAME/main/Assets/Sprites/Icon/stageIconFullSmall.png)
 
 
 # Welcome, Get Out!
@@ -13,6 +13,10 @@ See the project [Wiki](https://github.com/sim2kid/GAME/wiki) for more info!
 
 
 # Team Member
+Here are our Team Members as well as where you can find their other works!<br>
+This project was made as a Capstone at Columbia College Chicago.<br>
+
+
 **Team Leader/Designer/Artist**<br>
 Mingshen Wu ([Website](https://mingshenwu.myportfolio.com/))
 
@@ -34,7 +38,7 @@ William Bacchus
 
 
 **Artist**<br>
-Yunyi Chen
+Yunyi Chen (Communication University of China, Nanjing)
 
 
 

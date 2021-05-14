@@ -28,10 +28,18 @@ public class level1Composer : MonoBehaviour
     private int touchCount;
     public int treeCount;
 
+    Persistent data;
+
     private void Start()
     {
         touchCount = 0;
         treeCount = 0;
+        data = Persistent.Get();
+        data.UpdateScene();
+        if (data.GameWasClosed) 
+        {
+            OhItsYou();
+        }
     }
 
     private void Update()
@@ -64,11 +72,24 @@ public class level1Composer : MonoBehaviour
         }
     }
 
+    private void OhItsYou() 
+    {
+        treeCount = 3;
+        CurtainAnimator.SetTrigger("Open");
+        CurtainAnimator.SetBool("Return", true);
+        narrator.NewNarration(rat, 5);
+    }
+
     public void Exit() 
     {
-        Application.Quit();
-#if UNITY_EDITOR
+        data.GameWasClosed = true;
+#if UNITY_WEBGL
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level-0");
+#elif UNITY_EDITOR
         Debug.Log("You tried to exit the game, but Unity can't quit, so you get this neat little messege instead! Hi Friends!");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level-0");
+#else
+        Application.Quit();
 #endif
     }
 
