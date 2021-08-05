@@ -36,9 +36,31 @@
                 },
                 {
                     "name": "",
+                    "id": "ee7fcdcc-a7c8-4248-a991-a16f21c0ed85",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Location",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "23f0a296-7123-4716-bf1f-ff7ed0413bd7",
                     "path": "<Mouse>/leftButton",
                     "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98178a2a-3b11-4de3-a0b8-ec4c9136e66b",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Hold",
