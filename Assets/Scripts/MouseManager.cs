@@ -28,7 +28,17 @@ public class MouseManager : MonoBehaviour
         m_Click = ClickType.Clear;
         lastHit = null;
         layerMask = 1 << 9;
+
+        /*
+        GameObject debug = new GameObject();
+        debug.transform.position = new Vector3(-7, 7, -8);
+        debugtext = (TMPro.TextMeshPro)debug.AddComponent(typeof(TMPro.TextMeshPro));
+        debugtext.fontSize = 10;
+        debugtext.text = "DEBUGGGGGGGGGGGGG";
+        */
     }
+
+    //TMPro.TextMeshPro debugtext;
 
     private void FixedUpdate()
     {
@@ -68,7 +78,8 @@ public class MouseManager : MonoBehaviour
 
         notifyObject(m_Click, screenLocation);
 
-        //Debug.Log("Click: " + click + ", Hold: " + hold + ", Location: (" + screenLocation.x + ", " + screenLocation.y + ")");
+        //Debug.Log("Click: " + m_Click + ", Hold: " + hold + ", Location: (" + screenLocation.x + ", " + screenLocation.y + ")");
+        //debugtext.text = "Click: " + m_Click + ", Hold: " + hold + ", Location: (" + screenLocation.x + ", " + screenLocation.y + ")";
     }
 
     private void notifyObject(ClickType clickEvent, Vector2 screenLocation)
