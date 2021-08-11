@@ -43,11 +43,8 @@ Yunyi Chen (Communication University of China, Nanjing)
 
 
 # Download
-[Download the Latest Release Here](https://github.com/sim2kid/GAME/releases)<br>
-
-
-or
-
-
-[Play Online Here](https://simm.games/game)
+[Download the Latest Release Here](https://github.com/sim2kid/Welcome-Get-Out/releases)<br>
+[Play Online Here](https://sim2kid.itch.io/welcome-get-out)<br>
+[Get it on Google Play Here](https://play.google.com/store/apps/details?id=com.SimmGamesLLC.WelcomeGetOut)<br>
+Not Avalianble for IOS yet...
 
