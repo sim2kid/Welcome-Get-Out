@@ -8,7 +8,7 @@ Will you best him?</p>
 
 
 # Wiki
-See the project [Wiki](https://github.com/sim2kid/GAME/wiki) for more info!
+See the project [Wiki](https://github.com/sim2kid/Welcome-Get-Out/wiki) for more info!
 
 
 
